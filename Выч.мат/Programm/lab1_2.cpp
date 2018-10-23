@@ -1,21 +1,23 @@
 #include <iostream>
 #include <cmath>
+#include <iomanip>
+#include <algorithm>
 
 using namespace std;
 
 
-double f(double x) { return x * x - log(x + 1); }
-double f_1(double x) { return 2 * x - 1 / (x + 1); }
-double f_2(double x) { return 2 + 1 / (x + 1) * (x + 1); }
+double phi(double x) { return sqrt(log(x + 1)); }
+double phi_1(double x) { return 1 / (2 * sqrt(log(x + 1)) * (x + 1));}
 
 double find(double x, double e) {
 	double rez;
-	int iteration;
+	int iteration = 0;
 	do {
 		iteration++;
 		rez = x;
 		x = sqrt(log(x + 1));
-	} while (fabs(rez - x) > e);
+		cout << "n= " << fixed << setprecision(6) << setw(5) << iteration << "  xn = " << setw(10) << rez << " xn+1 = " << setw(10) << x << " |x(n+1)-xn|" << setw(10) << abs(rez - x) << endl;
+	} while (phi_1(0.5) / (1 - phi_1(0.5)) * fabs(rez - x) > e);
 	return x;
 }
 
@@ -26,15 +28,14 @@ int main(int argc, char const *argv[])
 	cout << "Combined solution" << endl;
 	cout << "Isolation interval [" << a << ";" << b << "]" << endl;
 	cout << "Calculation error: " << e << endl;
-	cout << "F(a) = " << f(a) << endl;
-	cout << "F(b) = " << f(b) << endl; 
-	cout << "F'(a) = " << f_1(a) << endl;
-	cout << "F'(b) = " << f_1(b) << endl;
-	cout << "F''(a) = " << f_2(a) << endl;
-	cout << "F''(b) = " << f_2(b) << endl;
 	cout << "phi(x) = sqrt(ln(x + 1)" << endl;
+	cout << "phi(a) = " << phi(a) << endl;
+	cout << "phi(b) = " << phi(b) << endl; 
+	cout << "phi'(a) = " << phi_1(a) << endl;
+	cout << "phi'(b) = " << phi_1(b) << endl;
+	if (abs(phi_1(a)) < 1 && abs(phi_1(b) < 1)) cout << "|phi'(x)| < 1" << endl;
+	cout << "One-sided convergence" << endl;
 	double x0 = (a + b) / 2;
-	cout << "phi'(x0) = " << 1 / (2 * sqrt(log(x0 + 1)) * (x0 + 1)) << endl;
 	cout << find(x0, e);
 	return 0;
 }

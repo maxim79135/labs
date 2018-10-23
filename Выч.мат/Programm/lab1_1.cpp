@@ -10,7 +10,7 @@ double f_1(double x) { return 2 * x - 1 / (x + 1); }
 double f_2(double x) { return 2 + 1 / ((x + 1) * (x + 1)); }
 
 int main() {
-	double a = 0.1, b = 0.9, e = 0.00001;
+	double a = 0.5, b = 0.9, e = 0.00001;
 	cout << "F(x) = x^2 - ln(x+1)" << endl;
 	cout << "Combined solution" << endl;
 	cout << "Isolation interval [" << a << ";" << b << "]" << endl;
@@ -22,7 +22,7 @@ int main() {
 	cout << "F''(a) = " << f_2(a) << endl;
 	cout << "F''(b) = " << f_2(b) << endl;	
 	int n = 1;
-	//if (!max(abs(f_2(a)), abs(f_2(b))) <= 2 * max(abs(f_1(a)), abs(f_1(b)))) b = b - (b - a) / 2;
+	if (max(abs(f_2(a)), abs(f_2(b))) <= 2 * max(abs(f_1(a)), abs(f_1(b)))) cout << "Condition (M <= 2m) is true" << endl;
 	
 	if (f(a) * f_2(a) > 0) {
 			a = a - f(a) / f_1(a);

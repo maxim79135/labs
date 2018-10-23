@@ -8,7 +8,7 @@ begin
   y := rad;
   e := 3 - 2 * rad;
   while (x < y) do begin
-    SetPixel(round(x) + 100, round(y) + 100, RGB(R, G, B));
+    SetPixel(round(x) + 250, round(y) + 100, RGB(R, G, B));
     SetPixel(round(y) + 100, round(x) + 100, RGB(R, G, B));
     SetPixel(round(y) + 100, round(-x) + 100, RGB(R, G, B));
     SetPixel(round(x) + 100, round(-y) + 100, RGB(R, G, B));
