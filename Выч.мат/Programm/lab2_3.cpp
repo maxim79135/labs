@@ -21,7 +21,7 @@ int _A(int i, int j, int (&a)[3][3]) {
 }
 
 int main() {
-	cout << "Solving a third-order linear equation system inverse matrix method" << endl;
+	cout << "Solving a third-order linear equation system inverse matrix method" << endl << "AX=B => X=A^(-1)*B" << endl;
 	int n = 3;
 	int A[3][3] = { {3, 2, 7},
 									{-5, 4, 1},

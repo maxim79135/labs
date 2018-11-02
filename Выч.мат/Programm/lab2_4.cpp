@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cmath>
+#include <algorithm>
 
 using namespace std;
 
@@ -60,7 +61,7 @@ int main() {
 		x -= dx;
 		y -= dy;
 		cout << "x = " << x << " | y = " << y << " |" << "\n\n"; 
-		norm = sqrt((px - x) * (px - x) + (py - y) * (py - y));
+		norm = max((px - x) * (px - x), (py - y) * (py - y));
 	} while (norm >= e);
 
 	cout << "x = " << x << " | y = " << y << " |";
