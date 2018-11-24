@@ -5,13 +5,14 @@
 
 using namespace std;
 
-const int n = 6;
-double lagrang(double *x, double *y, double X);
+const int n = 11;
+void newton(double *x, double *y, double *X);
+int Fact(int x);
 
 int main() {
-	double X[11] = { 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65 };
-	double Y[11] = { 0.860708, 0.818731, 0.778801, 0.740818, 0.704688, 0.670320, 0.637628, 0.606531, 0.576950, 0.548812, 0.522046 }; 
-	double t[4] = { 0.1535, 0.6247, 0.1317, 0.6672 };
+	double X[n] = { 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65 };
+	double Y[n] = { 0.860708, 0.818731, 0.778801, 0.740818, 0.704688, 0.670320, 0.637628, 0.606531, 0.576950, 0.548812, 0.522046 }; 
+	double t[4] = { 0.1535, 0.6247, 0.1317,0.6672 };
 	double e = 0.000001;
 
 	cout << "Interpolation according to the Newton formula" << endl;
@@ -26,18 +27,59 @@ int main() {
  			 <<	"0,50     0,606531 " << endl 
  			 <<	"0,55     0,576950 " << endl 
  			 <<	"0,60     0,548812 " << endl
- 			 <<	"0,65     0,522046 " << endl;
+ 			 <<	"0,65     0,522046 \n\n";
 	
-	cout << "N(X) = " << fixed << setprecision(6) << newton(X, Y, t) << endl;
-	//cout << (-82.0647873) * t*t*t*t*t + 240.8373045285334 * t * t * t * t - 292.282957064 * t * t * t +187.6966416139549 * t * t - 67.60908206759223 * t +12.7584368549594;
+	newton(X, Y, t);
 }
 
-double newton(double *x, double *y, double *X) {
-	double sum = 0;
+void newton(double *x, double *y, double *X) {
+	double a[n][n];
+	double sum;
+	
 	for (int i = 0; i < 4; i++) {
-		double q = (X[i] - x[0]) / (0.05);
+		sum = 0;
+
+		for (int j = 0; j < n; j++) a[j][0] = y[j];
+
+		for (int j = 1; j < n; j++)
+			for (int k = 0; k < n - j; k++)
+				a[k][j] = a[k + 1][j - 1] - a[k][j - 1];
+		
+		double q;
+		if (i % 2 == 0) {
+			q = (X[i] - x[0]) / 0.05;
+			sum += y[0];
+			double p;
+			for (int j = 1; j < n; j++) {
+				p = 1;
+				for (int k = 0; k < j; k++) 
+					p *= (q - k);
+				sum += p * a[0][j] / Fact(j);
+			}
+		} else {
+			q = (X[i] - x[n - 1]) / 0.05;
+			sum += y[n - 1];
+			double p;
+			for (int j = 1; j < n; j++) {
+				p = 1;
+				for (int k = 0; k < j; k++) 
+					p *= (q + k);
+				//cout << p << " " << a[n - j - 1][j] << endl;
+				sum += p * a[n - j - 1][j] / Fact(j);
+			}
+		}
+		cout << "N(X" << i + 1 << ")" << " = " << fixed << setprecision(6) << sum << endl;	
 	}
-	return sum;
+	cout << "\n\n Finite differences: " << endl;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < n - i; j++)
+			cout << setw(9) << a[i][j] << " | ";
+		cout << endl;
+	}
 }
 
-
+int Fact(int x)  { 
+    if (x==0)
+    return 1;
+    return x*Fact(x-1);
+}

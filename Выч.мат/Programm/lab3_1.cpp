@@ -9,9 +9,14 @@ const int n = 6;
 double lagrang(double *x, double *y, double X);
 
 int main() {
-	double X[6] = { 0.35, 0.41, 0.47, 0.51, 0.56, 0.64 };
-	double Y[6] = { 2.73951, 2.30080, 1.96864, 1.78776, 1.59502, 1.34310 }; 
-	double t = 0.453;
+	//double X[6] = { 0.35, 0.41, 0.47, 0.51, 0.56, 0.64 };
+	//double Y[6] = { 2.73951, 2.30080, 1.96864, 1.78776, 1.59502, 1.34310 }; 
+	
+	double X[6] = { 0.43, 0.48, 0.55, 0.62, 0.70 };
+	double Y[6] = { 1.63597, 1.73234, 1.87668, 2.03345, 2.22846, 2.83973 }; 
+	
+	//double t = 0.453;
+	double t = 0.527;
 	double e = 0.000001;
 
 	cout << "Interpolation according to the Lagrange formula" << endl;
