@@ -9,14 +9,10 @@ const int n = 6;
 double lagrang(double *x, double *y, double X);
 
 int main() {
-	//double X[6] = { 0.35, 0.41, 0.47, 0.51, 0.56, 0.64 };
-	//double Y[6] = { 2.73951, 2.30080, 1.96864, 1.78776, 1.59502, 1.34310 }; 
+	double X[6] = { 0.35, 0.41, 0.47, 0.51, 0.56, 0.64 };
+	double Y[6] = { 2.73951, 2.30080, 1.96864, 1.78776, 1.59502, 1.34310 }; 
 	
-	double X[6] = { 0.43, 0.48, 0.55, 0.62, 0.70 };
-	double Y[6] = { 1.63597, 1.73234, 1.87668, 2.03345, 2.22846, 2.83973 }; 
-	
-	//double t = 0.453;
-	double t = 0.527;
+	double t = 0.453;
 	double e = 0.000001;
 
 	cout << "Interpolation according to the Lagrange formula" << endl;
@@ -28,6 +24,21 @@ int main() {
  			 <<	"0,56     1,59502 " << endl 
  			 <<	"0,64     1,34310 " << endl;
 	
+	for (int i = 0; i < n; i++) {
+		double p = 1;
+		for (int j = 0; j < n; j++) {
+			if (i != j) {
+				p*= X[i] - X[j];
+				cout << fixed << setprecision(3) << setw(8) << X[i] - X[j] << " ";
+			} else {
+				p*= t - X[i];
+				cout << fixed << setprecision(3) << setw(8) << t - X[i] << " ";
+			} 	
+		}
+		cout << fixed << setprecision(8) << setw(10) << p << " " << Y[i] / p;
+		cout << endl;
+	}
+
 	cout << "L(X) = " << fixed << setprecision(6) << lagrang(X, Y, t) << endl;
 	//cout << (-82.0647873) * t*t*t*t*t + 240.8373045285334 * t * t * t * t - 292.282957064 * t * t * t +187.6966416139549 * t * t - 67.60908206759223 * t +12.7584368549594;
 }
@@ -46,5 +57,3 @@ double lagrang(double *x, double *y, double X) {
 	}
 	return sum;
 }
-
-
