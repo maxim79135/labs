@@ -85,7 +85,7 @@ int main(int argc, char const *argv[])
 
 	double deviation;
 	for (int i = 0; i < n; i++) {
-		cout << "x = " << X[i] << " y = " << a * X[i] * X[i] + b * X[i] + c << endl;
+		cout << "x = " << X[i] << setw(7) << " y = " << matrix[i][1] << setw(10) << " y' = " << a * X[i] * X[i] + b * X[i] + c << endl;
 		deviation += pow(matrix[i][1] - (a * X[i] * X[i] + b * X[i] + c), 2);
 	}
 	cout << "Standard deviation: " << sqrt(deviation / n); 
