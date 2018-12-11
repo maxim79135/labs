@@ -30,10 +30,14 @@ int main(int argc, char const *argv[])
 			 << "18 319" << endl
 			 << "19 355 \n\n";
 
+	double e[7];
+	double x1 = (X[0] + X[n - 1]) / 2, x2 = sqrt(X[0] * X[n - 1]), x3 = 2 * X[0] * x[n - 1] / (X[0] + X[n - 1]);
+	double y1 = (Y[0] + Y[n - 1]) / 2, y2 = sqrt(Y[0] * Y[n - 1]), y3 = 2 * Y[0] * Y[n - 1] / (Y[0] + Y[n - 1]); 
+	e[0] = 
+
 	int matrix[11][7];
 	for (int i = 0; i < n; i++) {
 		matrix[i][0] = X[i];
-		//cout << Y[i] << endl;
 		matrix[i][1] = Y[i];
 		matrix[i][2] = X[i] * X[i];
 		matrix[i][3] = X[i] * X[i] * X[i];
