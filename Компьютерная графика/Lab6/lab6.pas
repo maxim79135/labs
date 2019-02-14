@@ -76,9 +76,7 @@ end;
 begin
   OnKeyDown := KeyDown;
   SetPenColor(clRed);
-  for i := 0 to 4 do begin
-             a[i].x := V[i].x;
-             a[i].y := V[i].y;
-           end;
+  for i := 0 to 4 do 
+             a[i] := V[i];
   draw_item();
 end.

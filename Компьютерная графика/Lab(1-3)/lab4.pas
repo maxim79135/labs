@@ -7,7 +7,7 @@ begin
   x := 0;
   y := rad;
   e := 3 - 2 * rad;
-  while (x < y) do begin
+  while (x <= y) do begin
     SetPixel(round(x) + 250, round(y) + 100, RGB(R, G, B));
     SetPixel(round(y) + 100, round(x) + 100, RGB(R, G, B));
     SetPixel(round(y) + 100, round(-x) + 100, RGB(R, G, B));
@@ -21,15 +21,5 @@ begin
       e := e + 4 * (x - y) + 10; y := y - 1;
     end;
       x := x + 1;
-    end;
-    if ( x = y) then begin 
-     SetPixel(round(x) + 100, round(y) + 100, RGB(R, G, B));
-    SetPixel(round(y) + 100, round(x) + 100, RGB(R, G, B));
-    SetPixel(round(y) + 100, round(-x) + 100, RGB(R, G, B));
-    SetPixel(round(x) + 100, round(-y) + 100, RGB(R, G, B));
-    SetPixel(round(-x) + 100, round(-y) + 100, RGB(R, G, B));
-    SetPixel(round(-y) + 100, round(-x) + 100, RGB(R, G, B));
-    SetPixel(round(-y) + 100, round(x) + 100, RGB(R, G, B));
-    SetPixel(round(-x) + 100, round(y + 100), RGB(R, G, B));
-    end;
+  end;
 end.
