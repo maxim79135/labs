@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "LPM_OR"
+set_global_assignment -name IP_TOOL_VERSION "9.1"
+set_global_assignment -name VHDL_FILE [file join $::quartus(qip_path) "or10rez.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "or10rez.bsf"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "or10rez_inst.vhd"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "or10rez.inc"]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) "or10rez.cmp"]

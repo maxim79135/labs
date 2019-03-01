@@ -97,13 +97,15 @@ int main() {
 	{
 	case 1:
 		table_i = read_matrix <int>(n);
-		L_i = LU_matrix(table_i, n).L;
-		U_i = LU_matrix(table_i, n).U;
+		LU <int> temp_i = LU_matrix(table_i, n);
+		L_i = temp_i.L;
+		U_i = temp_i.U;
 		break;
 	case 2:
 		table_d = read_matrix <double>(n);
-		L_d = LU_matrix(table_d, n).L;
-		U_d = LU_matrix(table_d, n).U;
+		LU <double> temp_d = LU_matrix(table_d, n);
+		L_d = temp_d.L;
+		U_d = temp_d.U;
 		break;
 	default:
 		return 0;
@@ -164,7 +166,7 @@ T** read_matrix(int n) {
 			while (true) {
 				cout << "A[" << i << "] [" << j << "]: ";
 				cin >> table[i][j]; 
-				if (!cin) {
+				if (!cin || (table[i][j] == 0 && i == j)) {
 					cout << "Wrong value of the matrix element. Repeat input\n";
 					cin.clear();
 					while (cin.get() != '\n');
@@ -195,7 +197,7 @@ LU <int> LU_matrix(int** table, int n) {
 		for (int j = 0; j < n; j++)
 			temp.U[i][j] = table[i][j];
 	}
-
+	
 	temp.L = new int*[n];
 	for (int i = 0; i < n; i++) {
 		temp.L[i] = new int[n];
@@ -247,7 +249,7 @@ LU <double> LU_matrix(double** table, int n) {
 
 		for (int i = k; i < n; i++)
 			for (int j = k - 1; j < n; j++)
-				temp.U[i][j] -= temp.L[i][k - 1] * temp.U[k - 1][j];
+				temp.U[i][j] = temp.U[i][j] - temp.L[i][k - 1] * temp.U[k - 1][j];
 	}
 	return temp;
 }

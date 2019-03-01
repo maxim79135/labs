@@ -1,0 +1,47 @@
+%
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+%
+
+GROUP CREATE x = x[15] x[14] x[13] x[12] x[11] x[10] x[9] x[8] x[7] x[6] x[5] x[4] x[3] x[2] x[1] x[0] ;
+GROUP CREATE p = p[7] p[6] p[5] p[4] p[3] p[2] p[1] ;
+GROUP CREATE y = y[9] y[8] y[7] y[6] y[5] y[4] y[3] y[2] y[1] y[0] ;
+GROUP CREATE result = result[15] result[14] result[13] result[12] result[11] result[10] result[9] result[8] result[7] result[6] result[5] result[4] result[3] result[2] result[1] result[0] ;
+INPUTS clk x;
+OUTPUTS p y result Z PRS PMR;
+UNIT ns;
+RADIX HEX;
+PATTERN
+   0.0> 0 0000 = 11 000 4000 0 0 1 
+  50.0> 1 FFFF = 11 003 C000 0 0 1 
+ 100.0> 0 0000 = 11 003 C000 0 0 1 
+ 150.0> 1 FFFF = 11 042 4000 0 0 1 
+ 200.0> 0 0000 = 11 042 4000 0 0 1 
+ 250.0> 1 FFFF = 11 000 4000 1 0 1 
+ 300.0> 0 0000 = 11 000 4000 1 0 1 
+ 350.0> 1 FFFF = 11 000 4000 1 0 1 
+ 400.0> 0 0000 = 11 000 4000 1 0 1 
+ 450.0> 1 FFFF = 11 000 4000 1 0 1 
+ 500.0> 0 0000 = 11 000 4000 1 0 1 
+ 550.0> 1 FFFF = 11 000 4000 1 0 1 
+ 600.0> 0 0000 = 11 000 4000 1 0 1 
+ 650.0> 1 FFFF = 11 000 4000 1 0 1 
+ 700.0> 0 0000 = 11 000 4000 1 0 1 
+ 750.0> 1 FFFF = 11 000 4000 1 0 1 
+ 800.0> 0 0000 = 11 000 4000 1 0 1 
+ 850.0> 1 FFFF = 11 000 4000 1 0 1 
+ 900.0> 0 0000 = 11 000 4000 1 0 1 
+ 950.0> 1 FFFF = 11 000 4000 1 0 1 
+1000.0> X X = X X X X X X 
+;

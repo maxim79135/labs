@@ -1,0 +1,356 @@
+Analysis & Synthesis report for OA
+Tue Feb 26 00:22:38 2019
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                  ;
++------------------------------------+------------------------------------------+
+; Analysis & Synthesis Status        ; Failed - Tue Feb 26 00:22:38 2019        ;
+; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
+; Revision Name                      ; OA                                       ;
+; Top-level Entity Name              ; OA                                       ;
+; Family                             ; Cyclone III                              ;
+; Total logic elements               ; N/A until Partition Merge                ;
+;     Total combinational functions  ; N/A until Partition Merge                ;
+;     Dedicated logic registers      ; N/A until Partition Merge                ;
+; Total registers                    ; N/A until Partition Merge                ;
+; Total pins                         ; N/A until Partition Merge                ;
+; Total virtual pins                 ; N/A until Partition Merge                ;
+; Total memory bits                  ; N/A until Partition Merge                ;
+; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                ;
+; Total PLLs                         ; N/A until Partition Merge                ;
++------------------------------------+------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP3C5E144C8        ;                    ;
+; Top-level entity name                                                      ; OA                 ; OA                 ;
+; Family name                                                                ; Cyclone III        ; Stratix II         ;
+; Use Generated Physical Constraints File                                    ; Off                ;                    ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Show Parameter Settings Tables in Synthesis Report                         ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     1 processor            ; 100.0%      ;
+;     2 processors           ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
+    Info: Processing started: Tue Feb 26 00:22:31 2019
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off OA -c OA
+Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning: Can't analyze file -- file ../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/ct4pm.vhd is missing
+Warning: Can't analyze file -- file ../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/dc4.vhd is missing
+Warning: Can't analyze file -- file ../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/reg.vhd is missing
+Info: Found 2 design units, including 1 entities, in source file rgshiftleft.vhd
+    Info: Found design unit 1: rgshiftleft-SYN
+    Info: Found entity 1: rgshiftleft
+Info: Found 2 design units, including 1 entities, in source file rgshiftschp.vhd
+    Info: Found design unit 1: rgshiftschp-SYN
+    Info: Found entity 1: rgshiftschp
+Info: Found 2 design units, including 1 entities, in source file rgharak.vhd
+    Info: Found design unit 1: rgharak-SYN
+    Info: Found entity 1: rgharak
+Info: Found 2 design units, including 1 entities, in source file sm1.vhd
+    Info: Found design unit 1: sm1-SYN
+    Info: Found entity 1: sm1
+Info: Found 2 design units, including 1 entities, in source file sm2.vhd
+    Info: Found design unit 1: sm2-SYN
+    Info: Found entity 1: sm2
+Info: Found 2 design units, including 1 entities, in source file or5har.vhd
+    Info: Found design unit 1: or5har-SYN
+    Info: Found entity 1: or5har
+Info: Found 2 design units, including 1 entities, in source file rgshiftright.vhd
+    Info: Found design unit 1: rgshiftright-SYN
+    Info: Found entity 1: rgshiftright
+Info: Found 2 design units, including 1 entities, in source file ms1.vhd
+    Info: Found design unit 1: ms1-SYN
+    Info: Found entity 1: ms1
+Info: Found 2 design units, including 1 entities, in source file inector11.vhd
+    Info: Found design unit 1: inector11-SYN
+    Info: Found entity 1: inector11
+Info: Found 2 design units, including 1 entities, in source file ct1.vhd
+    Info: Found design unit 1: ct1-SYN
+    Info: Found entity 1: ct1
+Info: Found 1 design units, including 1 entities, in source file oa.bdf
+    Info: Found entity 1: OA
+Info: Found 2 design units, including 1 entities, in source file xor21.vhd
+    Info: Found design unit 1: xor21-SYN
+    Info: Found entity 1: xor21
+Info: Found 2 design units, including 1 entities, in source file or10rez.vhd
+    Info: Found design unit 1: or10rez-SYN
+    Info: Found entity 1: or10rez
+Info: Found 2 design units, including 1 entities, in source file us.vhd
+    Info: Found design unit 1: us-SYN
+    Info: Found entity 1: us
+Info: Found 1 design units, including 1 entities, in source file ua.v
+    Info: Found entity 1: UA
+Info: Found 2 design units, including 1 entities, in source file shifter.vhd
+    Info: Found design unit 1: shifter-SYN
+    Info: Found entity 1: shifter
+Info: Found 2 design units, including 1 entities, in source file schp.vhd
+    Info: Found design unit 1: schp-SYN
+    Info: Found entity 1: schp
+Info: Found 1 design units, including 1 entities, in source file upavt.bdf
+    Info: Found entity 1: UpAvt
+Info: Elaborating entity "OA" for the top level hierarchy
+Warning: No superset bus at connection
+Info: Elaborating entity "UpAvt" for hierarchy "UpAvt:inst45"
+Warning: Not all bits in bus "nx[10..1]" are used
+Warning: No superset bus at connection
+Info: Elaborating entity "or5har" for hierarchy "or5har:inst14"
+Info: Elaborating entity "LPM_OR" for hierarchy "or5har:inst14|LPM_OR:lpm_or_component"
+Info: Elaborated megafunction instantiation "or5har:inst14|LPM_OR:lpm_or_component"
+Info: Instantiated megafunction "or5har:inst14|LPM_OR:lpm_or_component" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "1"
+    Info: Parameter "LPM_SIZE" = "4"
+    Info: Parameter "LPM_TYPE" = "LPM_OR"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Warning: Using design file ct2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: ct2-SYN
+    Info: Found entity 1: CT2
+Info: Elaborating entity "CT2" for hierarchy "CT2:inst36"
+Info: Elaborating entity "lpm_counter" for hierarchy "CT2:inst36|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "CT2:inst36|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "CT2:inst36|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "DOWN"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "5"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_d1k.tdf
+    Info: Found entity 1: cntr_d1k
+Info: Elaborating entity "cntr_d1k" for hierarchy "CT2:inst36|lpm_counter:lpm_counter_component|cntr_d1k:auto_generated"
+Info: Elaborating entity "sm2" for hierarchy "sm2:inst1"
+Info: Elaborating entity "lpm_add_sub" for hierarchy "sm2:inst1|lpm_add_sub:lpm_add_sub_component"
+Info: Elaborated megafunction instantiation "sm2:inst1|lpm_add_sub:lpm_add_sub_component"
+Info: Instantiated megafunction "sm2:inst1|lpm_add_sub:lpm_add_sub_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "ADD"
+    Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=NO"
+    Info: Parameter "lpm_representation" = "UNSIGNED"
+    Info: Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info: Parameter "lpm_width" = "5"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_d6i.tdf
+    Info: Found entity 1: add_sub_d6i
+Info: Elaborating entity "add_sub_d6i" for hierarchy "sm2:inst1|lpm_add_sub:lpm_add_sub_component|add_sub_d6i:auto_generated"
+Info: Elaborating entity "rgharak" for hierarchy "rgharak:inst29"
+Info: Elaborating entity "lpm_ff" for hierarchy "rgharak:inst29|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "rgharak:inst29|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "rgharak:inst29|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "lpm_fftype" = "DFF"
+    Info: Parameter "lpm_type" = "LPM_FF"
+    Info: Parameter "lpm_width" = "5"
+Info: Elaborating entity "rgshiftleft" for hierarchy "rgshiftleft:inst16"
+Info: Elaborating entity "lpm_shiftreg" for hierarchy "rgshiftleft:inst16|lpm_shiftreg:lpm_shiftreg_component"
+Info: Elaborated megafunction instantiation "rgshiftleft:inst16|lpm_shiftreg:lpm_shiftreg_component"
+Info: Instantiated megafunction "rgshiftleft:inst16|lpm_shiftreg:lpm_shiftreg_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "LEFT"
+    Info: Parameter "lpm_type" = "LPM_SHIFTREG"
+    Info: Parameter "lpm_width" = "22"
+Info: Elaborating entity "rgshiftright" for hierarchy "rgshiftright:inst15"
+Info: Elaborating entity "lpm_shiftreg" for hierarchy "rgshiftright:inst15|lpm_shiftreg:lpm_shiftreg_component"
+Info: Elaborated megafunction instantiation "rgshiftright:inst15|lpm_shiftreg:lpm_shiftreg_component"
+Info: Instantiated megafunction "rgshiftright:inst15|lpm_shiftreg:lpm_shiftreg_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "RIGHT"
+    Info: Parameter "lpm_type" = "LPM_SHIFTREG"
+    Info: Parameter "lpm_width" = "11"
+Info: Elaborating entity "schp" for hierarchy "schp:inst43"
+Info: Elaborating entity "lpm_ff" for hierarchy "schp:inst43|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "schp:inst43|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "schp:inst43|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "lpm_fftype" = "DFF"
+    Info: Parameter "lpm_type" = "LPM_FF"
+    Info: Parameter "lpm_width" = "22"
+Info: Elaborating entity "ms1" for hierarchy "ms1:inst41"
+Info: Elaborating entity "LPM_MUX" for hierarchy "ms1:inst41|LPM_MUX:lpm_mux_component"
+Info: Elaborated megafunction instantiation "ms1:inst41|LPM_MUX:lpm_mux_component"
+Info: Instantiated megafunction "ms1:inst41|LPM_MUX:lpm_mux_component" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "22"
+    Info: Parameter "LPM_SIZE" = "2"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_PIPELINE" = "0"
+    Info: Parameter "LPM_TYPE" = "LPM_MUX"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Info: Found 1 design units, including 1 entities, in source file db/mux_s7e.tdf
+    Info: Found entity 1: mux_s7e
+Info: Elaborating entity "mux_s7e" for hierarchy "ms1:inst41|LPM_MUX:lpm_mux_component|mux_s7e:auto_generated"
+Info: Elaborating entity "sm1" for hierarchy "sm1:inst27"
+Info: Elaborating entity "lpm_add_sub" for hierarchy "sm1:inst27|lpm_add_sub:lpm_add_sub_component"
+Info: Elaborated megafunction instantiation "sm1:inst27|lpm_add_sub:lpm_add_sub_component"
+Info: Instantiated megafunction "sm1:inst27|lpm_add_sub:lpm_add_sub_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "ADD"
+    Info: Parameter "lpm_hint" = "ONE_INPUT_IS_CONSTANT=NO,CIN_USED=YES"
+    Info: Parameter "lpm_representation" = "UNSIGNED"
+    Info: Parameter "lpm_type" = "LPM_ADD_SUB"
+    Info: Parameter "lpm_width" = "22"
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_r3i.tdf
+    Info: Found entity 1: add_sub_r3i
+Info: Elaborating entity "add_sub_r3i" for hierarchy "sm1:inst27|lpm_add_sub:lpm_add_sub_component|add_sub_r3i:auto_generated"
+Info: Elaborating entity "xor21" for hierarchy "xor21:inst26"
+Info: Elaborating entity "LPM_XOR" for hierarchy "xor21:inst26|LPM_XOR:lpm_xor_component"
+Info: Elaborated megafunction instantiation "xor21:inst26|LPM_XOR:lpm_xor_component"
+Info: Instantiated megafunction "xor21:inst26|LPM_XOR:lpm_xor_component" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "22"
+    Info: Parameter "LPM_SIZE" = "2"
+    Info: Parameter "LPM_TYPE" = "LPM_XOR"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Info: Elaborating entity "shifter" for hierarchy "shifter:inst9"
+Info: Elaborating entity "lpm_clshift" for hierarchy "shifter:inst9|lpm_clshift:lpm_clshift_component"
+Info: Elaborated megafunction instantiation "shifter:inst9|lpm_clshift:lpm_clshift_component"
+Info: Instantiated megafunction "shifter:inst9|lpm_clshift:lpm_clshift_component" with the following parameter:
+    Info: Parameter "lpm_shifttype" = "LOGICAL"
+    Info: Parameter "lpm_type" = "LPM_CLSHIFT"
+    Info: Parameter "lpm_width" = "22"
+    Info: Parameter "lpm_widthdist" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_pkb.tdf
+    Info: Found entity 1: lpm_clshift_pkb
+Info: Elaborating entity "lpm_clshift_pkb" for hierarchy "shifter:inst9|lpm_clshift:lpm_clshift_component|lpm_clshift_pkb:auto_generated"
+Info: Elaborating entity "ct1" for hierarchy "ct1:inst"
+Info: Elaborating entity "lpm_counter" for hierarchy "ct1:inst|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "ct1:inst|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "ct1:inst|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UP"
+    Info: Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "5"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_6cj.tdf
+    Info: Found entity 1: cntr_6cj
+Info: Elaborating entity "cntr_6cj" for hierarchy "ct1:inst|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated"
+Info: Elaborating entity "or10rez" for hierarchy "or10rez:inst34"
+Info: Elaborating entity "LPM_OR" for hierarchy "or10rez:inst34|LPM_OR:lpm_or_component"
+Info: Elaborated megafunction instantiation "or10rez:inst34|LPM_OR:lpm_or_component"
+Info: Instantiated megafunction "or10rez:inst34|LPM_OR:lpm_or_component" with the following parameter:
+    Info: Parameter "LPM_WIDTH" = "1"
+    Info: Parameter "LPM_SIZE" = "10"
+    Info: Parameter "LPM_TYPE" = "LPM_OR"
+    Info: Parameter "LPM_HINT" = "UNUSED"
+Error: Node instance "UAinst1" instantiates undefined entity "dc4"
+Error: Node instance "UAinst27" instantiates undefined entity "ct4pm"
+Error: Node instance "inst25" instantiates undefined entity "reg"
+Error: Quartus II Analysis & Synthesis was unsuccessful. 3 errors, 7 warnings
+    Error: Peak virtual memory: 267 megabytes
+    Error: Processing ended: Tue Feb 26 00:22:38 2019
+    Error: Elapsed time: 00:00:07
+    Error: Total CPU time (on all processors): 00:00:06
+
+
