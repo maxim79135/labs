@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Mar 12 01:15:43 2019
+Quartus II 64-Bit Version : 9.1 Build 222 10/21/2009 SJ Full Version
+Revision Name : laba1
+Top-level Entity Name : laba1
+Family : Cyclone III
+Device : EP3C5F256C8
+Timing Models : Final
+Total logic elements : 161 / 5,136 ( 3 % )
+    Total combinational functions : 161 / 5,136 ( 3 % )
+    Dedicated logic registers : 66 / 5,136 ( 1 % )
+Total registers : 66
+Total pins : 53 / 183 ( 29 % )
+Total virtual pins : 0
+Total memory bits : 0 / 423,936 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

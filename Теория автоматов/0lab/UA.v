@@ -57,7 +57,8 @@ module UA
 	end
 	else begin
 		y=10'b0001000010;
-		pc=9; end
+		Z=1;
+		pc=100; end
 	end
 	
 	3:begin
@@ -72,7 +73,8 @@ module UA
 	end
 	else begin
 		y=10'b0001000010;
-		pc=9; end
+		Z=1;
+		pc=100; end
 	end
 	
 	5:begin
@@ -81,16 +83,18 @@ module UA
 		pc=pc+1;
 	end
 	else if (!p[2] & !p[5] & !p[3]) begin
-		y=10'b0000100000;
+		y=10'b0000000000;
 		pc=6;
 	end
 	else if (!p[2] & p[5]) begin
 		y=10'b0001000010;
-		pc=9;
+		Z=1;
+		pc=100;
 	end
 	else if (p[2]) begin
 		y=10'b0010000000;
-		pc=8;
+		Z=1;
+		pc=100;
 	end
 	end
 	
@@ -102,11 +106,10 @@ module UA
 	7:begin
 	if (!p[6] & p[3]) begin
 		y=10'b0000010000;
-		pc=5;
+		pc=6;
 	end
 	else if (!p[6] & !p[3]) begin
 		y=10'b0000100000;
-		pc=6;
 	end
 	else if (p[6] & !p[4]) begin
 		y=10'b0000001000;
@@ -114,31 +117,38 @@ module UA
 	end	
 	else if (p[6] & p[4] & !p[7] & p[5]) begin
 		y=10'b0001000010;
-		pc=9;
+		Z=1;
+		pc=100;
 	end
 	else if (p[6] & p[4] & !p[7] & !p[5]) begin
 		Z=1;
 		y=10'b0000000000;
-		pc=10;
+		pc=100;
 	end
 	else if (p[6] & p[4] & p[7]) begin
 		y=10'b0010000000;
-		pc=8;
+		Z=1;
+		pc=100;
 	end
 	end
 	
 	8:begin
-		Z=1;
-		y=10'b0000000000;
-		pc=10;
+		if (p[5]) begin
+			y=10'b0001000010;
+			Z=1;
+			pc=100;
+		end
+		else begin
+			y=10'b0000000000;
+			pc=pc+1;
+		end
 	end
 	
 	9:begin
-		Z=1;
 		y=10'b0000000000;
-		pc=10;
+		Z=1;
+		pc=100;
 	end
-	
 	default y=10'b0000000000;
 	endcase;
 	end

@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Feb 21 17:18:32 2019
+Fitter Status : Successful - Sun Mar 17 15:03:54 2019
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : FirstProgramm
 Top-level Entity Name : firstprogramm
 Family : Cyclone III
 Device : EP3C5F256A7
 Timing Models : Final
-Total logic elements : 128 / 5,136 ( 2 % )
-    Total combinational functions : 128 / 5,136 ( 2 % )
-    Dedicated logic registers : 63 / 5,136 ( 1 % )
-Total registers : 63
-Total pins : 53 / 183 ( 29 % )
+Total logic elements : 142 / 5,136 ( 3 % )
+    Total combinational functions : 142 / 5,136 ( 3 % )
+    Dedicated logic registers : 64 / 5,136 ( 1 % )
+Total registers : 64
+Total pins : 95 / 183 ( 52 % )
 Total virtual pins : 0
 Total memory bits : 0 / 423,936 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )

@@ -1829,12 +1829,6 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "sign,not14,ct1[3..0],rg3[9..0]" (rect 1352 808 1492 820)(font "Arial" ))
-	(pt 1528 824)
-	(pt 1344 824)
-	(bus)
-)
-(connector
 	(text "p[5]" (rect 1352 848 1370 860)(font "Arial" ))
 	(pt 1528 864)
 	(pt 1344 864)
@@ -1948,5 +1942,11 @@ applicable agreement for further details.
 	(text "sh[9..0]" (rect 1525 1128 1562 1140)(font "Arial" ))
 	(pt 1584 1144)
 	(pt 1512 1144)
+	(bus)
+)
+(connector
+	(text "sign,not14,ct1[3..0],rg3[9..0]" (rect 1352 808 1492 820)(font "Arial" ))
+	(pt 1528 824)
+	(pt 1344 824)
 	(bus)
 )

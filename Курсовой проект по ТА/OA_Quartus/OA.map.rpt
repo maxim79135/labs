@@ -1,5 +1,5 @@
 Analysis & Synthesis report for OA
-Tue Feb 26 14:21:16 2019
+Sun Mar 10 17:26:34 2019
 Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 
 
@@ -13,30 +13,32 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Inverted Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Source assignments for ct2:inst18|lpm_counter:lpm_counter_component
- 13. Source assignments for ct1:inst24|lpm_counter:lpm_counter_component
- 14. Parameter Settings for User Entity Instance: ct2:inst18|lpm_counter:lpm_counter_component
- 15. Parameter Settings for User Entity Instance: rg1:inst|lpm_shiftreg:lpm_shiftreg_component
- 16. Parameter Settings for User Entity Instance: sm2:inst20|lpm_add_sub:lpm_add_sub_component
- 17. Parameter Settings for User Entity Instance: rg4:inst19|lpm_ff:lpm_ff_component
- 18. Parameter Settings for User Entity Instance: ct1:inst24|lpm_counter:lpm_counter_component
- 19. Parameter Settings for User Entity Instance: ili4:inst28|LPM_OR:lpm_or_component
- 20. Parameter Settings for User Entity Instance: rg3_new:inst1|lpm_ff:lpm_ff_component
- 21. Parameter Settings for User Entity Instance: mux21:inst31|LPM_MUX:lpm_mux_component
- 22. Parameter Settings for User Entity Instance: sm1:inst13|lpm_add_sub:lpm_add_sub_component
- 23. Parameter Settings for User Entity Instance: and21:inst12|LPM_AND:lpm_and_component
- 24. Parameter Settings for User Entity Instance: xor21:inst5|LPM_XOR:lpm_xor_component
- 25. Parameter Settings for User Entity Instance: rg2:inst3|lpm_shiftreg:lpm_shiftreg_component
- 26. Parameter Settings for User Entity Instance: mux11:inst8|LPM_MUX:lpm_mux_component
- 27. Parameter Settings for User Entity Instance: mux21:inst11|LPM_MUX:lpm_mux_component
- 28. Parameter Settings for User Entity Instance: mux21:inst7|LPM_MUX:lpm_mux_component
- 29. Parameter Settings for User Entity Instance: leftshift:inst14|lpm_clshift:lpm_clshift_component
- 30. lpm_shiftreg Parameter Settings by Entity Instance
- 31. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Source assignments for UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component
+ 10. Source assignments for UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component|cntr_ihi:auto_generated
+ 11. Source assignments for ct2:inst18|lpm_counter:lpm_counter_component
+ 12. Source assignments for ct1:inst24|lpm_counter:lpm_counter_component
+ 13. Parameter Settings for User Entity Instance: UA:inst6|reg:inst7|lpm_ff:lpm_ff_component
+ 14. Parameter Settings for User Entity Instance: UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component
+ 15. Parameter Settings for User Entity Instance: UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component
+ 16. Parameter Settings for User Entity Instance: ct2:inst18|lpm_counter:lpm_counter_component
+ 17. Parameter Settings for User Entity Instance: rg1:inst|lpm_shiftreg:lpm_shiftreg_component
+ 18. Parameter Settings for User Entity Instance: sm2:inst20|lpm_add_sub:lpm_add_sub_component
+ 19. Parameter Settings for User Entity Instance: rg4:inst19|lpm_ff:lpm_ff_component
+ 20. Parameter Settings for User Entity Instance: ct1:inst24|lpm_counter:lpm_counter_component
+ 21. Parameter Settings for User Entity Instance: ili4:inst28|LPM_OR:lpm_or_component
+ 22. Parameter Settings for User Entity Instance: rg3_new:inst1|lpm_ff:lpm_ff_component
+ 23. Parameter Settings for User Entity Instance: mux21:inst31|LPM_MUX:lpm_mux_component
+ 24. Parameter Settings for User Entity Instance: sm1:inst13|lpm_add_sub:lpm_add_sub_component
+ 25. Parameter Settings for User Entity Instance: and21:inst12|LPM_AND:lpm_and_component
+ 26. Parameter Settings for User Entity Instance: xor21:inst5|LPM_XOR:lpm_xor_component
+ 27. Parameter Settings for User Entity Instance: rg2:inst3|lpm_shiftreg:lpm_shiftreg_component
+ 28. Parameter Settings for User Entity Instance: mux11:inst8|LPM_MUX:lpm_mux_component
+ 29. Parameter Settings for User Entity Instance: mux21:inst11|LPM_MUX:lpm_mux_component
+ 30. Parameter Settings for User Entity Instance: mux21:inst7|LPM_MUX:lpm_mux_component
+ 31. Parameter Settings for User Entity Instance: leftshift:inst14|lpm_clshift:lpm_clshift_component
+ 32. lpm_shiftreg Parameter Settings by Entity Instance
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -62,16 +64,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 26 14:21:16 2019    ;
+; Analysis & Synthesis Status        ; Successful - Sun Mar 10 17:26:34 2019    ;
 ; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
 ; Revision Name                      ; OA                                       ;
 ; Top-level Entity Name              ; OA                                       ;
 ; Family                             ; Cyclone III                              ;
-; Total logic elements               ; 191                                      ;
-;     Total combinational functions  ; 185                                      ;
-;     Dedicated logic registers      ; 84                                       ;
-; Total registers                    ; 84                                       ;
-; Total pins                         ; 113                                      ;
+; Total logic elements               ; 168                                      ;
+;     Total combinational functions  ; 162                                      ;
+;     Dedicated logic registers      ; 83                                       ;
+; Total registers                    ; 83                                       ;
+; Total pins                         ; 115                                      ;
 ; Total virtual pins                 ; 0                                        ;
 ; Total memory bits                  ; 0                                        ;
 ; Embedded Multiplier 9-bit elements ; 0                                        ;
@@ -182,6 +184,8 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                     ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+
+; ../UA_Quartus/dc4.vhd            ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus/dc4.vhd                ;
+; ../UA_Quartus/ct4pm.vhd          ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus/ct4pm.vhd              ;
 ; OA.bdf                           ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/OA.bdf                 ;
 ; xor21.vhd                        ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/xor21.vhd              ;
 ; mux21.vhd                        ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/mux21.vhd              ;
@@ -193,17 +197,21 @@ applicable agreement for further details.
 ; sm2.vhd                          ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/sm2.vhd                ;
 ; ct1.vhd                          ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/ct1.vhd                ;
 ; ili4.vhd                         ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/ili4.vhd               ;
-; UA.v                             ; yes             ; User Verilog HDL File              ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/UA.v                   ;
 ; rg3_new.vhd                      ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/rg3_new.vhd            ;
 ; leftshift.vhd                    ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/leftshift.vhd          ;
+; ../UA_Quartus/UA.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus/UA.bdf                 ;
+; reg.vhd                          ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/reg.vhd                ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf                          ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_decode.tdf                      ;
+; db/decode_lbf.tdf                ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/decode_lbf.tdf      ;
 ; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf                     ;
+; db/cntr_ihi.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/cntr_ihi.tdf        ;
 ; db/cntr_6cj.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/cntr_6cj.tdf        ;
 ; rg1.tdf                          ; yes             ; Auto-Found Wizard-Generated File   ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/rg1.tdf                ;
 ; lpm_shiftreg.inc                 ; yes             ; Auto-Found AHDL File               ; c:/altera/91/quartus/libraries/megafunctions/lpm_shiftreg.inc                    ;
 ; lpm_shiftreg.tdf                 ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_shiftreg.tdf                    ;
 ; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_add_sub.tdf                     ;
 ; db/add_sub_d6i.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/add_sub_d6i.tdf     ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf                          ;
 ; db/cntr_d1k.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/cntr_d1k.tdf        ;
 ; lpm_or.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_or.tdf                          ;
 ; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_mux.tdf                         ;
@@ -223,72 +231,69 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 191       ;
+; Estimated Total logic elements              ; 168       ;
 ;                                             ;           ;
-; Total combinational functions               ; 185       ;
+; Total combinational functions               ; 162       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 45        ;
-;     -- 3 input functions                    ; 107       ;
-;     -- <=2 input functions                  ; 33        ;
+;     -- 4 input functions                    ; 20        ;
+;     -- 3 input functions                    ; 108       ;
+;     -- <=2 input functions                  ; 34        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 151       ;
-;     -- arithmetic mode                      ; 34        ;
+;     -- normal mode                          ; 125       ;
+;     -- arithmetic mode                      ; 37        ;
 ;                                             ;           ;
-; Total registers                             ; 84        ;
-;     -- Dedicated logic registers            ; 84        ;
+; Total registers                             ; 83        ;
+;     -- Dedicated logic registers            ; 83        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 113       ;
+; I/O pins                                    ; 115       ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 83        ;
-; Total fan-out                               ; 1047      ;
-; Average fan-out                             ; 2.12      ;
+; Maximum fan-out                             ; 82        ;
+; Total fan-out                               ; 962       ;
+; Average fan-out                             ; 2.03      ;
 +---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                  ;
-+---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                         ; Library Name ;
-+---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
-; |OA                                         ; 185 (11)          ; 84 (2)       ; 0           ; 0            ; 0       ; 0         ; 113  ; 0            ; |OA                                                                         ; work         ;
-;    |UA:inst33|                              ; 54 (54)           ; 13 (13)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst33                                                               ;              ;
-;    |and21:inst12|                           ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|and21:inst12                                                            ; work         ;
-;       |lpm_and:lpm_and_component|           ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|and21:inst12|lpm_and:lpm_and_component                                  ; work         ;
-;    |ct1:inst24|                             ; 12 (0)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct1:inst24                                                              ; work         ;
-;       |lpm_counter:lpm_counter_component|   ; 12 (0)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct1:inst24|lpm_counter:lpm_counter_component                            ; work         ;
-;          |cntr_d1k:auto_generated|          ; 12 (12)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct1:inst24|lpm_counter:lpm_counter_component|cntr_d1k:auto_generated    ; work         ;
-;    |ct2:inst18|                             ; 6 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct2:inst18                                                              ; work         ;
-;       |lpm_counter:lpm_counter_component|   ; 6 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct2:inst18|lpm_counter:lpm_counter_component                            ;              ;
-;          |cntr_6cj:auto_generated|          ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct2:inst18|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated    ; work         ;
-;    |rg1:inst|                               ; 11 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg1:inst                                                                ; work         ;
-;       |lpm_shiftreg:lpm_shiftreg_component| ; 11 (11)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg1:inst|lpm_shiftreg:lpm_shiftreg_component                            ; work         ;
-;    |rg2:inst3|                              ; 21 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg2:inst3                                                               ; work         ;
-;       |lpm_shiftreg:lpm_shiftreg_component| ; 21 (21)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg2:inst3|lpm_shiftreg:lpm_shiftreg_component                           ; work         ;
-;    |rg3_new:inst1|                          ; 0 (0)             ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg3_new:inst1                                                           ; work         ;
-;       |lpm_ff:lpm_ff_component|             ; 0 (0)             ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg3_new:inst1|lpm_ff:lpm_ff_component                                   ; work         ;
-;    |rg4:inst19|                             ; 0 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg4:inst19                                                              ; work         ;
-;       |lpm_ff:lpm_ff_component|             ; 0 (0)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg4:inst19|lpm_ff:lpm_ff_component                                      ; work         ;
-;    |sm1:inst13|                             ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm1:inst13                                                              ; work         ;
-;       |lpm_add_sub:lpm_add_sub_component|   ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm1:inst13|lpm_add_sub:lpm_add_sub_component                            ; work         ;
-;          |add_sub_q3i:auto_generated|       ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm1:inst13|lpm_add_sub:lpm_add_sub_component|add_sub_q3i:auto_generated ; work         ;
-;    |sm2:inst20|                             ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm2:inst20                                                              ; work         ;
-;       |lpm_add_sub:lpm_add_sub_component|   ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm2:inst20|lpm_add_sub:lpm_add_sub_component                            ; work         ;
-;          |add_sub_d6i:auto_generated|       ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm2:inst20|lpm_add_sub:lpm_add_sub_component|add_sub_d6i:auto_generated ; work         ;
-+---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                             ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Library Name ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
+; |OA                                          ; 162 (11)          ; 83 (2)       ; 0           ; 0            ; 0       ; 0         ; 115  ; 0            ; |OA                                                                                   ; work         ;
+;    |UA:inst6|                                ; 31 (19)           ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6                                                                          ;              ;
+;       |ct4pm:UAinst24|                       ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|ct4pm:UAinst24                                                           ; work         ;
+;          |lpm_counter:lpm_counter_component| ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component                         ; work         ;
+;             |cntr_ihi:auto_generated|        ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component|cntr_ihi:auto_generated ; work         ;
+;       |dc4:UAinst28|                         ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|dc4:UAinst28                                                             ; work         ;
+;          |lpm_decode:lpm_decode_component|   ; 5 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component                             ; work         ;
+;             |decode_lbf:auto_generated|      ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component|decode_lbf:auto_generated   ; work         ;
+;       |reg:inst7|                            ; 0 (0)             ; 8 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|reg:inst7                                                                ; work         ;
+;          |lpm_ff:lpm_ff_component|           ; 0 (0)             ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|reg:inst7|lpm_ff:lpm_ff_component                                        ; work         ;
+;    |and21:inst12|                            ; 21 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|and21:inst12                                                                      ; work         ;
+;       |lpm_and:lpm_and_component|            ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|and21:inst12|lpm_and:lpm_and_component                                            ; work         ;
+;    |ct1:inst24|                              ; 12 (0)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct1:inst24                                                                        ; work         ;
+;       |lpm_counter:lpm_counter_component|    ; 12 (0)            ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct1:inst24|lpm_counter:lpm_counter_component                                      ; work         ;
+;          |cntr_d1k:auto_generated|           ; 12 (12)           ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct1:inst24|lpm_counter:lpm_counter_component|cntr_d1k:auto_generated              ; work         ;
+;    |ct2:inst18|                              ; 6 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct2:inst18                                                                        ; work         ;
+;       |lpm_counter:lpm_counter_component|    ; 6 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct2:inst18|lpm_counter:lpm_counter_component                                      ; work         ;
+;          |cntr_6cj:auto_generated|           ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|ct2:inst18|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated              ; work         ;
+;    |rg1:inst|                                ; 11 (0)            ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg1:inst                                                                          ; work         ;
+;       |lpm_shiftreg:lpm_shiftreg_component|  ; 11 (11)           ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg1:inst|lpm_shiftreg:lpm_shiftreg_component                                      ; work         ;
+;    |rg2:inst3|                               ; 21 (0)            ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg2:inst3                                                                         ; work         ;
+;       |lpm_shiftreg:lpm_shiftreg_component|  ; 21 (21)           ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg2:inst3|lpm_shiftreg:lpm_shiftreg_component                                     ; work         ;
+;    |rg3_new:inst1|                           ; 0 (0)             ; 21 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg3_new:inst1                                                                     ; work         ;
+;       |lpm_ff:lpm_ff_component|              ; 0 (0)             ; 21 (21)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg3_new:inst1|lpm_ff:lpm_ff_component                                             ; work         ;
+;    |rg4:inst19|                              ; 0 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg4:inst19                                                                        ; work         ;
+;       |lpm_ff:lpm_ff_component|              ; 0 (0)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|rg4:inst19|lpm_ff:lpm_ff_component                                                ; work         ;
+;    |sm1:inst13|                              ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm1:inst13                                                                        ; work         ;
+;       |lpm_add_sub:lpm_add_sub_component|    ; 43 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm1:inst13|lpm_add_sub:lpm_add_sub_component                                      ; work         ;
+;          |add_sub_q3i:auto_generated|        ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm1:inst13|lpm_add_sub:lpm_add_sub_component|add_sub_q3i:auto_generated           ; work         ;
+;    |sm2:inst20|                              ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm2:inst20                                                                        ; work         ;
+;       |lpm_add_sub:lpm_add_sub_component|    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm2:inst20|lpm_add_sub:lpm_add_sub_component                                      ; work         ;
+;          |add_sub_d6i:auto_generated|        ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|sm2:inst20|lpm_add_sub:lpm_add_sub_component|add_sub_d6i:auto_generated           ; work         ;
++----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+---------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                              ;
-+----------------------------------------+----------------------------------------+
-; Register name                          ; Reason for Removal                     ;
-+----------------------------------------+----------------------------------------+
-; UA:inst33|pc[4,7..31]                  ; Stuck at GND due to stuck port data_in ;
-; UA:inst33|pc[6]                        ; Merged with UA:inst33|pc[5]            ;
-; Total Number of Removed Registers = 27 ;                                        ;
-+----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -296,34 +301,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 84    ;
+; Total registers                              ; 83    ;
 ; Number of registers using Synchronous Clear  ; 21    ;
-; Number of registers using Synchronous Load   ; 10    ;
-; Number of registers using Asynchronous Clear ; 1     ;
+; Number of registers using Synchronous Load   ; 14    ;
+; Number of registers using Asynchronous Clear ; 5     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 69    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; UA:inst33|pc[0]                        ; 9       ;
-; Total number of inverted registers = 1 ;         ;
-+----------------------------------------+---------+
++----------------------------------------------------------------------------------+
+; Source assignments for UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component ;
++---------------------------+-------+------+---------------------------------------+
+; Assignment                ; Value ; From ; To                                    ;
++---------------------------+-------+------+---------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                     ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                     ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                     ;
++---------------------------+-------+------+---------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; Yes        ; |OA|UA:inst33|pc[5]        ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |OA|UA:inst33|y            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++----------------------------------------------------------------------------------------------------------+
+; Source assignments for UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component|cntr_ihi:auto_generated ;
++---------------------------+-------+------+---------------------------------------------------------------+
+; Assignment                ; Value ; From ; To                                                            ;
++---------------------------+-------+------+---------------------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; a101  ; -    ; -                                                             ;
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                                             ;
+; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                                                             ;
++---------------------------+-------+------+---------------------------------------------------------------+
 
 
 +---------------------------------------------------------------------+
@@ -346,6 +353,71 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                        ;
 ; SUPPRESS_DA_RULE_INTERNAL ; s103  ; -    ; -                        ;
 +---------------------------+-------+------+--------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UA:inst6|reg:inst7|lpm_ff:lpm_ff_component ;
++------------------------+-------------+--------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                             ;
++------------------------+-------------+--------------------------------------------------+
+; LPM_WIDTH              ; 8           ; Signed Integer                                   ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                          ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                          ;
+; LPM_FFTYPE             ; DFF         ; Untyped                                          ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                          ;
+; CBXI_PARAMETER         ; NOTHING     ; Untyped                                          ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                       ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                     ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                     ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                   ;
++------------------------+-------------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component ;
++------------------------+-------------+-------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                        ;
++------------------------+-------------+-------------------------------------------------------------+
+; LPM_WIDTH              ; 4           ; Signed Integer                                              ;
+; LPM_DECODES            ; 16          ; Signed Integer                                              ;
+; LPM_PIPELINE           ; 0           ; Untyped                                                     ;
+; CASCADE_CHAIN          ; MANUAL      ; Untyped                                                     ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                                     ;
+; CBXI_PARAMETER         ; decode_lbf  ; Untyped                                                     ;
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                  ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                              ;
++------------------------+-------------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component ;
++------------------------+-------------+-----------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                            ;
++------------------------+-------------+-----------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                      ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                    ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                    ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                                  ;
+; LPM_WIDTH              ; 4           ; Signed Integer                                                  ;
+; LPM_DIRECTION          ; DEFAULT     ; Untyped                                                         ;
+; LPM_MODULUS            ; 0           ; Untyped                                                         ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                         ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                         ;
+; LPM_PORT_UPDOWN        ; PORT_USED   ; Untyped                                                         ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                                         ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                         ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                              ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                              ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                         ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                         ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                         ;
+; CBXI_PARAMETER         ; cntr_ihi    ; Untyped                                                         ;
++------------------------+-------------+-----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-------------------------------------------------------------------------------------------+
@@ -692,9 +764,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Tue Feb 26 14:21:09 2019
+    Info: Processing started: Sun Mar 10 17:26:25 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off OA -c OA
 Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: Found 2 design units, including 1 entities, in source file /documents/1курс/2курс/Курсовой проект по ТА/ua_quartus/dc4.vhd
+    Info: Found design unit 1: dc4-SYN
+    Info: Found entity 1: dc4
+Info: Found 2 design units, including 1 entities, in source file /documents/1курс/2курс/Курсовой проект по ТА/ua_quartus/ct4pm.vhd
+    Info: Found design unit 1: ct4pm-SYN
+    Info: Found entity 1: ct4pm
 Info: Found 1 design units, including 1 entities, in source file ua_1.bdf
     Info: Found entity 1: UA_1
 Info: Found 1 design units, including 1 entities, in source file oa.bdf
@@ -732,23 +810,53 @@ Info: Found 2 design units, including 1 entities, in source file ct1.vhd
 Info: Found 2 design units, including 1 entities, in source file ili4.vhd
     Info: Found design unit 1: ili4-SYN
     Info: Found entity 1: ili4
-Info: Found 1 design units, including 1 entities, in source file ua.v
-    Info: Found entity 1: UA
 Info: Found 2 design units, including 1 entities, in source file rg3_new.vhd
     Info: Found design unit 1: rg3_new-SYN
     Info: Found entity 1: rg3_new
 Info: Found 2 design units, including 1 entities, in source file leftshift.vhd
     Info: Found design unit 1: leftshift-SYN
     Info: Found entity 1: leftshift
-Warning: Can't analyze file -- file UA.bdf is missing
+Info: Found 1 design units, including 1 entities, in source file /documents/1курс/2курс/Курсовой проект по ТА/ua_quartus/ua.bdf
+    Info: Found entity 1: UA
 Info: Found 2 design units, including 1 entities, in source file reg.vhd
     Info: Found design unit 1: reg-SYN
     Info: Found entity 1: reg
 Info: Found 1 design units, including 1 entities, in source file block1.bdf
     Info: Found entity 1: Block1
 Info: Elaborating entity "OA" for the top level hierarchy
-Info: Elaborating entity "UA" for hierarchy "UA:inst33"
-Warning (10762): Verilog HDL Case Statement warning at UA.v(47): can't check case statement for completeness because the case expression has too many possible states
+Info: Elaborating entity "UA" for hierarchy "UA:inst6"
+Warning: Not all bits in bus "nx[7..0]" are used
+Warning: Not all bits in bus "y[7..0]" are used
+Warning: No superset bus at connection
+Info: Elaborating entity "reg" for hierarchy "UA:inst6|reg:inst7"
+Info: Elaborating entity "lpm_ff" for hierarchy "UA:inst6|reg:inst7|lpm_ff:lpm_ff_component"
+Info: Elaborated megafunction instantiation "UA:inst6|reg:inst7|lpm_ff:lpm_ff_component"
+Info: Instantiated megafunction "UA:inst6|reg:inst7|lpm_ff:lpm_ff_component" with the following parameter:
+    Info: Parameter "lpm_fftype" = "DFF"
+    Info: Parameter "lpm_type" = "LPM_FF"
+    Info: Parameter "lpm_width" = "8"
+Info: Elaborating entity "dc4" for hierarchy "UA:inst6|dc4:UAinst28"
+Info: Elaborating entity "lpm_decode" for hierarchy "UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component"
+Info: Elaborated megafunction instantiation "UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component"
+Info: Instantiated megafunction "UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component" with the following parameter:
+    Info: Parameter "lpm_decodes" = "16"
+    Info: Parameter "lpm_type" = "LPM_DECODE"
+    Info: Parameter "lpm_width" = "4"
+Info: Found 1 design units, including 1 entities, in source file db/decode_lbf.tdf
+    Info: Found entity 1: decode_lbf
+Info: Elaborating entity "decode_lbf" for hierarchy "UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component|decode_lbf:auto_generated"
+Info: Elaborating entity "ct4pm" for hierarchy "UA:inst6|ct4pm:UAinst24"
+Info: Elaborating entity "lpm_counter" for hierarchy "UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component"
+Info: Elaborated megafunction instantiation "UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component"
+Info: Instantiated megafunction "UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component" with the following parameter:
+    Info: Parameter "lpm_direction" = "UNUSED"
+    Info: Parameter "lpm_port_updown" = "PORT_USED"
+    Info: Parameter "lpm_type" = "LPM_COUNTER"
+    Info: Parameter "lpm_width" = "4"
+Warning: Assertion warning: Counter will power up to an undefined state.  An asynchronous signal should be asserted before the counter reaches a known state.
+Info: Found 1 design units, including 1 entities, in source file db/cntr_ihi.tdf
+    Info: Found entity 1: cntr_ihi
+Info: Elaborating entity "cntr_ihi" for hierarchy "UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component|cntr_ihi:auto_generated"
 Info: Elaborating entity "ct2" for hierarchy "ct2:inst18"
 Info: Elaborating entity "lpm_counter" for hierarchy "ct2:inst18|lpm_counter:lpm_counter_component"
 Info: Elaborated megafunction instantiation "ct2:inst18|lpm_counter:lpm_counter_component"
@@ -889,14 +997,14 @@ Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_
     Info: Found entity 1: lpm_clshift_okb
 Info: Elaborating entity "lpm_clshift_okb" for hierarchy "leftshift:inst14|lpm_clshift:lpm_clshift_component|lpm_clshift_okb:auto_generated"
 Info: Timing-Driven Synthesis is running
-Info: Implemented 304 device resources after synthesis - the final resource count might be different
-    Info: Implemented 17 input pins
-    Info: Implemented 96 output pins
-    Info: Implemented 191 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 277 megabytes
-    Info: Processing ended: Tue Feb 26 14:21:16 2019
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:08
+Info: Implemented 284 device resources after synthesis - the final resource count might be different
+    Info: Implemented 18 input pins
+    Info: Implemented 97 output pins
+    Info: Implemented 169 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 281 megabytes
+    Info: Processing ended: Sun Mar 10 17:26:34 2019
+    Info: Elapsed time: 00:00:09
+    Info: Total CPU time (on all processors): 00:00:07
 
 

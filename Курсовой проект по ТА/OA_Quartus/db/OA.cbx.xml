@@ -1,10 +1,12 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="OA">
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_ihi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|leftshift:inst14|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_okb.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|mux11:inst8|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_q7e.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|mux21:inst7|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_r7e.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|sm2:inst20|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_d6i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|UA:inst6|dc4:UAinst28|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_lbf.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|mux21:inst11|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_r7e.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|mux21:inst31|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_r7e.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|OA|sm1:inst13|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_q3i.tdf"/>

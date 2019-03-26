@@ -1,0 +1,51 @@
+%
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+%
+
+GROUP CREATE x = x[15] x[14] x[13] x[12] x[11] x[10] x[9] x[8] x[7] x[6] x[5] x[4] x[3] x[2] x[1] x[0] ;
+GROUP CREATE p = p[2] p[1] ;
+GROUP CREATE y = y[10] y[9] y[8] y[7] y[6] y[5] y[4] y[3] y[2] y[1] y[0] ;
+GROUP CREATE result = result[15] result[14] result[13] result[12] result[11] result[10] result[9] result[8] result[7] result[6] result[5] result[4] result[3] result[2] result[1] result[0] ;
+INPUTS clk x;
+OUTPUTS p y result apin[8] apin[7] apin[6] apin[5] apin[4] apin[3] apin[2] apin[1] apin[0] ctpin[6] ctpin[5] ctpin[4] ctpin[3] ctpin[2] ctpin[1] ctpin[0] outpin[3] outpin[2] outpin[1] outpin[0] ypin[7] ypin[6] ypin[5] ypin[4] ypin[3] ypin[2] ypin[1] ypin[0];
+UNIT ns;
+RADIX HEX;
+PATTERN
+   0.0> 0 4000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U 0 0 0 0 0 0 0 0 
+  10.0> 1 4000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+  60.0> 0 4000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 100.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 110.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 160.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 200.0> 0 4000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 210.0> 1 4000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 260.0> 0 4000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 300.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 310.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 360.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 410.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 460.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 510.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 560.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 610.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 660.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 710.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 760.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 810.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 860.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 910.0> 1 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+ 960.0> 0 0000 = X 00X 000X U U U U U U U U U X X 0 0 0 1 U U U U U X X X X X X X X 
+1000.0> X X = X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X X 
+;

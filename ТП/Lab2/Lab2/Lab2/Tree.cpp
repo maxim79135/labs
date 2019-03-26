@@ -3,6 +3,7 @@
 #include <queue>
 
 using std::cout;
+using std::cin;
 using std::queue;
 
 Tree::Tree()
@@ -15,14 +16,17 @@ Tree::~Tree()
 	delete_tree();
 }
 
-void Tree::insert(int key, double *&arr, int size)
+void Tree::insert()
 {
-	if (root != nullptr) insert(key, arr, size, root);
+	if (root != nullptr) insert(root);
 	else {
 		root = new TreeNode;
-		root->value = key;
-		root->array_d = arr;
-		root->size = size;
+		cout << "Enter value: ";
+		cin >> root->value;
+		cout << "Enter size matrix";
+		cin >> root->size;
+		root->array_d = new double[root->size];
+		for (int i = 0; i < root->size; i++) cin >> root->array_d[i];
 		root->left = nullptr;
 		root->right = nullptr;
 	}
@@ -43,26 +47,33 @@ void Tree::print()
 	print(root);
 }
 
-void Tree::insert(int key, double *arr, int size, TreeNode *&leaf)
+void Tree::insert(TreeNode *&leaf)
 {
+	cout << "Enter value: ";
+	int key;
+	cin >> key;
 	if (key < leaf->value) {
-		if (leaf->left != nullptr) insert(key, arr, size, leaf->left);
+		if (leaf->left != nullptr) insert(leaf->left);
 		else {
 			leaf->left = new TreeNode;
 			leaf->left->value = key;
-			leaf->left->array_d = arr;
-			leaf->left->size = size;
+			cout << "Enter size matrix: ";
+			cin >> leaf->left->size;
+			leaf->left->array_d = new double[leaf->left->size];
+			for (int i = 0; i < leaf->left->size; i++) cin >> leaf->left->array_d[i];
 			leaf->left->left = nullptr;
 			leaf->left->right = nullptr;
 		}
 	}
 	else if (key >= leaf->value) {
-		if (leaf->right != nullptr) insert(key, arr, size, leaf->right);
+		if (leaf->right != nullptr) insert(leaf->right);
 		else {
 			leaf->right = new TreeNode;
 			leaf->right->value = key;
-			leaf->right->array_d = arr;
-			leaf->right->size = size;
+			cout << "Enter size matrix: ";
+			cin >> leaf->right->size;
+			leaf->right->array_d = new double[leaf->right->size];
+			for (int i = 0; i < leaf->right->size; i++) cin >> leaf->right->array_d[i];
 			leaf->right->left = nullptr;
 			leaf->right->right = nullptr;
 		}

@@ -1449,10 +1449,10 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 {
 	ZOOM{
 		ZBEGIN = 0;
-		ZEND = 52100;
-		NUMERATOR = 20;
-		DENOMINATOR = 1000;
-		TOP_INDEX = 37;
+		ZEND = 20000;
+		NUMERATOR = 800;
+		DENOMINATOR = 20000;
+		TOP_INDEX = 1;
 	}
 	CLOCK{
 		PERIOD = 10000;
@@ -1759,7 +1759,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result";
+		SIGNAL = "ct1out";
 		INDEX = 37;
 		FORMAT = T;
 		SCALE = 1;
@@ -1767,7 +1767,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[15]";
+		SIGNAL = "ct1out[5]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -1775,7 +1775,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[14]";
+		SIGNAL = "ct1out[4]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -1783,7 +1783,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[13]";
+		SIGNAL = "ct1out[3]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -1791,7 +1791,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[12]";
+		SIGNAL = "ct1out[2]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -1799,7 +1799,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[11]";
+		SIGNAL = "ct1out[1]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -1807,7 +1807,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[10]";
+		SIGNAL = "ct1out[0]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -1815,312 +1815,8 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "result[9]";
-		INDEX = 44;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[8]";
-		INDEX = 45;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[7]";
-		INDEX = 46;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[6]";
-		INDEX = 47;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[5]";
-		INDEX = 48;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[4]";
-		INDEX = 49;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[3]";
-		INDEX = 50;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[2]";
-		INDEX = 51;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[1]";
-		INDEX = 52;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "result[0]";
-		INDEX = 53;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "Z";
-		INDEX = 54;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PRS";
-		INDEX = 55;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "PMR";
-		INDEX = 56;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out";
-		INDEX = 57;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out[5]";
-		INDEX = 58;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out[4]";
-		INDEX = 59;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out[3]";
-		INDEX = 60;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out[2]";
-		INDEX = 61;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out[1]";
-		INDEX = 62;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct1out[0]";
-		INDEX = 63;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct2out";
-		INDEX = 64;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct2out[4]";
-		INDEX = 65;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct2out[3]";
-		INDEX = 66;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct2out[2]";
-		INDEX = 67;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct2out[1]";
-		INDEX = 68;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ct2out[0]";
-		INDEX = 69;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out";
-		INDEX = 70;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[10]";
-		INDEX = 71;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[9]";
-		INDEX = 72;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[8]";
-		INDEX = 73;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[7]";
-		INDEX = 74;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[6]";
-		INDEX = 75;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[5]";
-		INDEX = 76;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[4]";
-		INDEX = 77;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[3]";
-		INDEX = 78;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[2]";
-		INDEX = 79;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[1]";
-		INDEX = 80;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "rg1out[0]";
-		INDEX = 81;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
 		SIGNAL = "rg3out";
-		INDEX = 82;
+		INDEX = 44;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2128,7 +1824,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[9]";
-		INDEX = 83;
+		INDEX = 45;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2136,7 +1832,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[8]";
-		INDEX = 84;
+		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2144,7 +1840,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[7]";
-		INDEX = 85;
+		INDEX = 47;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2152,7 +1848,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[6]";
-		INDEX = 86;
+		INDEX = 48;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2160,7 +1856,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[5]";
-		INDEX = 87;
+		INDEX = 49;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2168,7 +1864,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[4]";
-		INDEX = 88;
+		INDEX = 50;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2176,7 +1872,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[3]";
-		INDEX = 89;
+		INDEX = 51;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2184,7 +1880,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[2]";
-		INDEX = 90;
+		INDEX = 52;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2192,7 +1888,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[1]";
-		INDEX = 91;
+		INDEX = 53;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2200,7 +1896,151 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "rg3out[0]";
-		INDEX = 92;
+		INDEX = 54;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out";
+		INDEX = 55;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[10]";
+		INDEX = 56;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[9]";
+		INDEX = 57;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[8]";
+		INDEX = 58;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[7]";
+		INDEX = 59;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[6]";
+		INDEX = 60;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[5]";
+		INDEX = 61;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[4]";
+		INDEX = 62;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[3]";
+		INDEX = 63;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[2]";
+		INDEX = 64;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[1]";
+		INDEX = 65;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "rg1out[0]";
+		INDEX = 66;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ct2out";
+		INDEX = 67;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ct2out[4]";
+		INDEX = 68;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ct2out[3]";
+		INDEX = 69;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ct2out[2]";
+		INDEX = 70;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ct2out[1]";
+		INDEX = 71;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ct2out[0]";
+		INDEX = 72;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2208,7 +2048,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out";
-		INDEX = 93;
+		INDEX = 73;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2216,7 +2056,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[9]";
-		INDEX = 94;
+		INDEX = 74;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2224,7 +2064,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[8]";
-		INDEX = 95;
+		INDEX = 75;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2232,7 +2072,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[7]";
-		INDEX = 96;
+		INDEX = 76;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2240,7 +2080,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[6]";
-		INDEX = 97;
+		INDEX = 77;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2248,7 +2088,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[5]";
-		INDEX = 98;
+		INDEX = 78;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2256,7 +2096,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[4]";
-		INDEX = 99;
+		INDEX = 79;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2264,7 +2104,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[3]";
-		INDEX = 100;
+		INDEX = 80;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2272,7 +2112,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[2]";
-		INDEX = 101;
+		INDEX = 81;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2280,7 +2120,7 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[1]";
-		INDEX = 102;
+		INDEX = 82;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
@@ -2288,271 +2128,167 @@ VECTOR("D:/Documents/1курс/2курс/Теория автоматов/0lab/FirstProgramm.tbl")
 	}
 	LINE{
 		SIGNAL = "sm1out[0]";
-		INDEX = 103;
+		INDEX = 83;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc";
-		INDEX = 104;
+		SIGNAL = "result";
+		INDEX = 84;
 		FORMAT = T;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[31]";
-		INDEX = 105;
+		SIGNAL = "result[15]";
+		INDEX = 85;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[30]";
-		INDEX = 106;
+		SIGNAL = "result[14]";
+		INDEX = 86;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[29]";
-		INDEX = 107;
+		SIGNAL = "result[13]";
+		INDEX = 87;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[28]";
-		INDEX = 108;
+		SIGNAL = "result[12]";
+		INDEX = 88;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[27]";
-		INDEX = 109;
+		SIGNAL = "result[11]";
+		INDEX = 89;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[26]";
-		INDEX = 110;
+		SIGNAL = "result[10]";
+		INDEX = 90;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[25]";
-		INDEX = 111;
+		SIGNAL = "result[9]";
+		INDEX = 91;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[24]";
-		INDEX = 112;
+		SIGNAL = "result[8]";
+		INDEX = 92;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[23]";
-		INDEX = 113;
+		SIGNAL = "result[7]";
+		INDEX = 93;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[22]";
-		INDEX = 114;
+		SIGNAL = "result[6]";
+		INDEX = 94;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[21]";
-		INDEX = 115;
+		SIGNAL = "result[5]";
+		INDEX = 95;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[20]";
-		INDEX = 116;
+		SIGNAL = "result[4]";
+		INDEX = 96;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[19]";
-		INDEX = 117;
+		SIGNAL = "result[3]";
+		INDEX = 97;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[18]";
-		INDEX = 118;
+		SIGNAL = "result[2]";
+		INDEX = 98;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[17]";
-		INDEX = 119;
+		SIGNAL = "result[1]";
+		INDEX = 99;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[16]";
-		INDEX = 120;
+		SIGNAL = "result[0]";
+		INDEX = 100;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[15]";
-		INDEX = 121;
+		SIGNAL = "Z";
+		INDEX = 101;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[14]";
-		INDEX = 122;
+		SIGNAL = "PRS";
+		INDEX = 102;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "UA:inst29|pc[13]";
-		INDEX = 123;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[12]";
-		INDEX = 124;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[11]";
-		INDEX = 125;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[10]";
-		INDEX = 126;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[9]";
-		INDEX = 127;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[8]";
-		INDEX = 128;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[7]";
-		INDEX = 129;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[6]";
-		INDEX = 130;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[5]";
-		INDEX = 131;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[4]";
-		INDEX = 132;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[3]";
-		INDEX = 133;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[2]";
-		INDEX = 134;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[1]";
-		INDEX = 135;
-		FORMAT = E;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "UA:inst29|pc[0]";
-		INDEX = 136;
+		SIGNAL = "PMR";
+		INDEX = 103;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;

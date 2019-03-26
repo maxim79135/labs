@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Tue Feb 26 14:21:16 2019
+Analysis & Synthesis Status : Successful - Sun Mar 10 17:26:34 2019
 Quartus II Version : 9.1 Build 222 10/21/2009 SJ Full Version
 Revision Name : OA
 Top-level Entity Name : OA
 Family : Cyclone III
-Total logic elements : 191
-    Total combinational functions : 185
-    Dedicated logic registers : 84
-Total registers : 84
-Total pins : 113
+Total logic elements : 168
+    Total combinational functions : 162
+    Dedicated logic registers : 83
+Total registers : 83
+Total pins : 115
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

@@ -1,0 +1,54 @@
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>VDB</sub_system>
+	<file>/quartus/db/vdb/vdb_channel.cpp</file>
+	<line>6050</line>
+	<callstack>
+	0x01129e67: db_vdb + 0x9e67 (?set_display_radix@VDB_CHANNEL@@QAIXW4RADIX@VDB_VALUE@@@Z + 0x27)
+	0x00cb5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	0x00cb9b48: ccl_mem + 0x9b48 (?locked_allocate@MEM_SEGMENT_INTERNAL@@AAIPAXPADKKPAVMEM_TRACKER_DATA@@@Z + 0x6b8)
+	0x00cb5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	</callstack>
+	<error>m_displayed_by.begin() != m_displayed_by.end()</error>
+	<date>Mon Mar 11 13:24:13 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>m_displayed_by.begin() != m_displayed_by.end()
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>VDB</sub_system>
+	<file>/quartus/db/vdb/vdb_channel.cpp</file>
+	<line>6050</line>
+	<callstack>
+	0x01229e67: db_vdb + 0x9e67 (?set_display_radix@VDB_CHANNEL@@QAIXW4RADIX@VDB_VALUE@@@Z + 0x27)
+	0x00bf5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	0x00bf9b48: ccl_mem + 0x9b48 (?locked_allocate@MEM_SEGMENT_INTERNAL@@AAIPAXPADKKPAVMEM_TRACKER_DATA@@@Z + 0x6b8)
+	0x00bf5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	</callstack>
+	<error>m_displayed_by.begin() != m_displayed_by.end()</error>
+	<date>Mon Mar 11 13:24:43 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>m_displayed_by.begin() != m_displayed_by.end()
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+
+<internal_error>
+	<executable>quartus_sim.exe</executable>
+	<sub_system>VDB</sub_system>
+	<file>/quartus/db/vdb/vdb_channel.cpp</file>
+	<line>6050</line>
+	<callstack>
+	0x01219e67: db_vdb + 0x9e67 (?set_display_radix@VDB_CHANNEL@@QAIXW4RADIX@VDB_VALUE@@@Z + 0x27)
+	0x00be5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	0x00be9b48: ccl_mem + 0x9b48 (?locked_allocate@MEM_SEGMENT_INTERNAL@@AAIPAXPADKKPAVMEM_TRACKER_DATA@@@Z + 0x6b8)
+	0x00be5580: ccl_mem + 0x5580 (mem_out_of_memory + 0x4f0)
+	</callstack>
+	<error>m_displayed_by.begin() != m_displayed_by.end()</error>
+	<date>Mon Mar 11 13:25:30 2019</date>
+	<version>Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition</version>
+	<full_error>m_displayed_by.begin() != m_displayed_by.end()
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition </full_error>
+</internal_error>
+

@@ -13,14 +13,14 @@ class Tree
 public:
 	Tree();
 	~Tree();
-	void insert(int key, double *&arr, int size);
+	void insert();
 	TreeNode *search(int key);
 	void delete_tree();
 	void print();
 	TreeNode *get_root() { return root; }
 
 private:
-	void insert(int key, double *arr, int size, TreeNode *&leaf);
+	void insert(TreeNode *&leaf);
 	TreeNode *search(int key, TreeNode *leaf);
 	void delete_tree(TreeNode *&leaf);
 	TreeNode *root;

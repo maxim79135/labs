@@ -1,5 +1,5 @@
 --lpm_counter CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone III" lpm_direction="UP" lpm_port_updown="PORT_UNUSED" lpm_width=5 clock cnt_en data q sload CARRY_CHAIN="MANUAL" CARRY_CHAIN_LENGTH=48
---VERSION_BEGIN 9.0SP2 cbx_cycloneii 2008:05:19:10:57:37:SJ cbx_lpm_add_sub 2009:05:07:10:25:28:SJ cbx_lpm_compare 2009:02:03:01:43:16:SJ cbx_lpm_counter 2008:05:19:10:42:20:SJ cbx_lpm_decode 2008:05:19:10:39:27:SJ cbx_mgl 2009:02:26:16:06:21:SJ cbx_stratix 2008:09:18:16:08:35:SJ cbx_stratixii 2008:11:14:16:08:42:SJ  VERSION_END
+--VERSION_BEGIN 9.1 cbx_cycloneii 2009:10:21:21:22:16:SJ cbx_lpm_add_sub 2009:10:21:21:22:16:SJ cbx_lpm_compare 2009:10:21:21:22:16:SJ cbx_lpm_counter 2009:10:21:21:22:16:SJ cbx_lpm_decode 2009:10:21:21:22:16:SJ cbx_mgl 2009:10:21:21:37:49:SJ cbx_stratix 2009:10:21:21:22:16:SJ cbx_stratixii 2009:10:21:21:22:16:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2009 Altera Corporation

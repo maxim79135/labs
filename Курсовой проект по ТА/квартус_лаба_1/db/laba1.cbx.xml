@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="laba1">
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|mux11:inst25|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_frc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|ct:inst7|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|mux11:inst15|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_frc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|mux11:inst17|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_frc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|shift:inst37|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_nkb.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|sm:inst11|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_c2i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|ct:inst24|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|mux11:inst23|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_frc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|mux11:inst36|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_frc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|laba1|sum11:inst19|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_p3i.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

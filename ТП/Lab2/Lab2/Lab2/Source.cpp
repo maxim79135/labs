@@ -59,15 +59,7 @@ int main() {
 			switch (pos)
 			{
 			case 0:
-				cout << "Enter value node: ";
-				int n;
-				cin >> temp;
-				cout << "Enter size the array: ";
-				cin >> n;
-				arr = new double[n];
-				for (int i = 0; i < n; i++)
-					cin >> arr[i];
-				t->insert(temp, arr, n);
+				t->insert();
 				break;
 			
 			case 1:
