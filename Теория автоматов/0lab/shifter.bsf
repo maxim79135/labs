@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -20,14 +20,14 @@ applicable agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 0 0 152 80)
-	(text "shifter" (rect 59 2 100 18)(font "Arial" (font_size 10)))
+	(rect 0 0 168 80)
+	(text "shifter" (rect 67 2 108 18)(font "Arial" (font_size 10)))
 	(text "inst" (rect 8 64 25 76)(font "Arial" ))
 	(port
 		(pt 0 24)
 		(input)
-		(text "data[9..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[9..0]" (rect 20 18 65 31)(font "Arial" (font_size 8)))
+		(text "data[10..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "data[10..0]" (rect 20 18 71 31)(font "Arial" (font_size 8)))
 		(line (pt 0 24)(pt 16 24)(line_width 3))
 	)
 	(port
@@ -38,17 +38,17 @@ applicable agreement for further details.
 		(line (pt 0 40)(pt 16 40)(line_width 1))
 	)
 	(port
-		(pt 152 24)
+		(pt 168 24)
 		(output)
-		(text "result[9..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "result[9..0]" (rect 82 18 131 31)(font "Arial" (font_size 8)))
-		(line (pt 152 24)(pt 136 24)(line_width 3))
+		(text "result[10..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "result[10..0]" (rect 92 18 147 31)(font "Arial" (font_size 8)))
+		(line (pt 168 24)(pt 152 24)(line_width 3))
 	)
 	(drawing
 		(text "LOGICAL left shift" (rect 21 52 100 64)(font "Arial" ))
 		(line (pt 16 16)(pt 16 64)(line_width 1))
-		(line (pt 136 16)(pt 136 64)(line_width 1))
-		(line (pt 16 16)(pt 136 16)(line_width 1))
-		(line (pt 16 64)(pt 136 64)(line_width 1))
+		(line (pt 152 16)(pt 152 64)(line_width 1))
+		(line (pt 16 16)(pt 152 16)(line_width 1))
+		(line (pt 16 64)(pt 152 64)(line_width 1))
 	)
 )

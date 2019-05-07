@@ -1,13 +1,3 @@
-﻿  Source.cpp
-d:\documents\1курс\2курс\тп\lab2\lab2\lab2\source.cpp(39): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\conio.h(452): note:  см. объявление "getch"
-d:\documents\1курс\2курс\тп\lab2\lab2\lab2\source.cpp(79): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\conio.h(452): note:  см. объявление "getch"
-d:\documents\1курс\2курс\тп\lab2\lab2\lab2\source.cpp(91): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\conio.h(452): note:  см. объявление "getch"
-d:\documents\1курс\2курс\тп\lab2\lab2\lab2\source.cpp(107): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\conio.h(452): note:  см. объявление "getch"
-d:\documents\1курс\2курс\тп\lab2\lab2\lab2\source.cpp(36): warning C4101: arr: неиспользованная локальная переменная
-d:\documents\1курс\2курс\тп\lab2\lab2\lab2\source.cpp(37): warning C4101: b: неиспользованная локальная переменная
+﻿  Tree.cpp
   Lab2.vcxproj -> D:\Documents\1курс\2курс\ТП\Lab2\Lab2\Debug\Lab2.exe
   Lab2.vcxproj -> D:\Documents\1курс\2курс\ТП\Lab2\Lab2\Debug\Lab2.pdb (Partial PDB)

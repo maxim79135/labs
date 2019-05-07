@@ -1,15 +1,15 @@
-Fitter Status : Successful - Wed May 16 14:53:53 2018
+Fitter Status : Successful - Wed Apr 10 07:47:13 2019
 Quartus II Version : 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition
 Revision Name : OA
 Top-level Entity Name : OA
 Family : Cyclone III
 Device : EP3C5E144C8
 Timing Models : Final
-Total logic elements : 177 / 5,136 ( 3 % )
-    Total combinational functions : 177 / 5,136 ( 3 % )
-    Dedicated logic registers : 86 / 5,136 ( 2 % )
-Total registers : 86
-Total pins : 57 / 95 ( 60 % )
+Total logic elements : 145 / 5,136 ( 3 % )
+    Total combinational functions : 144 / 5,136 ( 3 % )
+    Dedicated logic registers : 83 / 5,136 ( 2 % )
+Total registers : 83
+Total pins : 59 / 95 ( 62 % )
 Total virtual pins : 0
 Total memory bits : 0 / 423,936 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )

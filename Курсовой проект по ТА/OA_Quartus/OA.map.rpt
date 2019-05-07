@@ -1,6 +1,6 @@
 Analysis & Synthesis report for OA
-Sun Mar 10 17:26:34 2019
-Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+Thu Apr 11 11:27:04 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -45,7 +45,7 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -61,24 +61,24 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 10 17:26:34 2019    ;
-; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
-; Revision Name                      ; OA                                       ;
-; Top-level Entity Name              ; OA                                       ;
-; Family                             ; Cyclone III                              ;
-; Total logic elements               ; 168                                      ;
-;     Total combinational functions  ; 162                                      ;
-;     Dedicated logic registers      ; 83                                       ;
-; Total registers                    ; 83                                       ;
-; Total pins                         ; 115                                      ;
-; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                        ;
-; Total PLLs                         ; 0                                        ;
-+------------------------------------+------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Apr 11 11:27:03 2019        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; OA                                           ;
+; Top-level Entity Name              ; OA                                           ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 167                                          ;
+;     Total combinational functions  ; 161                                          ;
+;     Dedicated logic registers      ; 83                                           ;
+; Total registers                    ; 83                                           ;
+; Total pins                         ; 51                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -148,7 +148,7 @@ applicable agreement for further details.
 ; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 100                ; 100                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
 ; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
 ; Clock MUX Protection                                                       ; On                 ; On                 ;
 ; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
@@ -162,21 +162,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     1 processor            ; 100.0%      ;
-;     2 processors           ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -201,27 +195,27 @@ applicable agreement for further details.
 ; leftshift.vhd                    ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/leftshift.vhd          ;
 ; ../UA_Quartus/UA.bdf             ; yes             ; User Block Diagram/Schematic File  ; D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus/UA.bdf                 ;
 ; reg.vhd                          ; yes             ; User Wizard-Generated File         ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/reg.vhd                ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf                          ;
-; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_decode.tdf                      ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_ff.tdf                       ;
+; lpm_decode.tdf                   ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_decode.tdf                   ;
 ; db/decode_lbf.tdf                ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/decode_lbf.tdf      ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf                     ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_counter.tdf                  ;
 ; db/cntr_ihi.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/cntr_ihi.tdf        ;
 ; db/cntr_6cj.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/cntr_6cj.tdf        ;
 ; rg1.tdf                          ; yes             ; Auto-Found Wizard-Generated File   ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/rg1.tdf                ;
-; lpm_shiftreg.inc                 ; yes             ; Auto-Found AHDL File               ; c:/altera/91/quartus/libraries/megafunctions/lpm_shiftreg.inc                    ;
-; lpm_shiftreg.tdf                 ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_shiftreg.tdf                    ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_add_sub.tdf                     ;
+; lpm_shiftreg.inc                 ; yes             ; Auto-Found AHDL File               ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_shiftreg.inc                 ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_shiftreg.tdf                 ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf                  ;
 ; db/add_sub_d6i.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/add_sub_d6i.tdf     ;
 ; db/cntr_d1k.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/cntr_d1k.tdf        ;
-; lpm_or.tdf                       ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_or.tdf                          ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_mux.tdf                         ;
+; lpm_or.tdf                       ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.tdf                       ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.tdf                      ;
 ; db/mux_r7e.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/mux_r7e.tdf         ;
 ; db/add_sub_q3i.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/add_sub_q3i.tdf     ;
-; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_and.tdf                         ;
-; lpm_xor.tdf                      ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_xor.tdf                         ;
+; lpm_and.tdf                      ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_and.tdf                      ;
+; lpm_xor.tdf                      ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_xor.tdf                      ;
 ; rg2.tdf                          ; yes             ; Auto-Found Wizard-Generated File   ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/rg2.tdf                ;
 ; db/mux_q7e.tdf                   ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/mux_q7e.tdf         ;
-; lpm_clshift.tdf                  ; yes             ; Megafunction                       ; c:/altera/91/quartus/libraries/megafunctions/lpm_clshift.tdf                     ;
+; lpm_clshift.tdf                  ; yes             ; Megafunction                       ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_clshift.tdf                  ;
 ; db/lpm_clshift_okb.tdf           ; yes             ; Auto-Generated Megafunction        ; D:/Documents/1курс/2курс/Курсовой проект по ТА/OA_Quartus/db/lpm_clshift_okb.tdf ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------+
 
@@ -231,27 +225,27 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 168       ;
+; Estimated Total logic elements              ; 167       ;
 ;                                             ;           ;
-; Total combinational functions               ; 162       ;
+; Total combinational functions               ; 161       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 20        ;
+;     -- 4 input functions                    ; 19        ;
 ;     -- 3 input functions                    ; 108       ;
 ;     -- <=2 input functions                  ; 34        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 125       ;
+;     -- normal mode                          ; 124       ;
 ;     -- arithmetic mode                      ; 37        ;
 ;                                             ;           ;
 ; Total registers                             ; 83        ;
 ;     -- Dedicated logic registers            ; 83        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 115       ;
+; I/O pins                                    ; 51        ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 82        ;
-; Total fan-out                               ; 962       ;
-; Average fan-out                             ; 2.03      ;
+; Total fan-out                               ; 830       ;
+; Average fan-out                             ; 2.40      ;
 +---------------------------------------------+-----------+
 
 
@@ -260,8 +254,8 @@ applicable agreement for further details.
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                   ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------+--------------+
-; |OA                                          ; 162 (11)          ; 83 (2)       ; 0           ; 0            ; 0       ; 0         ; 115  ; 0            ; |OA                                                                                   ; work         ;
-;    |UA:inst6|                                ; 31 (19)           ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6                                                                          ;              ;
+; |OA                                          ; 161 (11)          ; 83 (2)       ; 0           ; 0            ; 0       ; 0         ; 51   ; 0            ; |OA                                                                                   ; work         ;
+;    |UA:inst6|                                ; 30 (18)           ; 12 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6                                                                          ;              ;
 ;       |ct4pm:UAinst24|                       ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|ct4pm:UAinst24                                                           ; work         ;
 ;          |lpm_counter:lpm_counter_component| ; 7 (0)             ; 4 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component                         ; work         ;
 ;             |cntr_ihi:auto_generated|        ; 7 (7)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |OA|UA:inst6|ct4pm:UAinst24|lpm_counter:lpm_counter_component|cntr_ihi:auto_generated ; work         ;
@@ -763,10 +757,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
-    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Sun Mar 10 17:26:25 2019
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Apr 11 11:26:54 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off OA -c OA
-Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 2 design units, including 1 entities, in source file /documents/1курс/2курс/Курсовой проект по ТА/ua_quartus/dc4.vhd
     Info: Found design unit 1: dc4-SYN
     Info: Found entity 1: dc4
@@ -997,14 +990,14 @@ Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_
     Info: Found entity 1: lpm_clshift_okb
 Info: Elaborating entity "lpm_clshift_okb" for hierarchy "leftshift:inst14|lpm_clshift:lpm_clshift_component|lpm_clshift_okb:auto_generated"
 Info: Timing-Driven Synthesis is running
-Info: Implemented 284 device resources after synthesis - the final resource count might be different
+Info: Implemented 219 device resources after synthesis - the final resource count might be different
     Info: Implemented 18 input pins
-    Info: Implemented 97 output pins
-    Info: Implemented 169 logic cells
+    Info: Implemented 33 output pins
+    Info: Implemented 168 logic cells
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 281 megabytes
-    Info: Processing ended: Sun Mar 10 17:26:34 2019
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:07
+    Info: Peak virtual memory: 282 megabytes
+    Info: Processing ended: Thu Apr 11 11:27:04 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:08
 
 

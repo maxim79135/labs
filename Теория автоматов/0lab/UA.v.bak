@@ -109,7 +109,8 @@ module UA
 		pc=6;
 	end
 	else if (!p[6] & !p[3]) begin
-		y=10'b0000100000;
+		//y=10'b0000100000;
+		pc=6;
 	end
 	else if (p[6] & !p[4]) begin
 		y=10'b0000001000;
@@ -133,6 +134,18 @@ module UA
 	end
 	
 	8:begin
+		if (p[5]) begin
+			y=10'b0001000010;
+			Z=1;
+			pc=100;
+		end
+		else begin
+			y=10'b0000000000;
+			pc=pc+1;
+		end
+	end
+	
+	9:begin
 		y=10'b0000000000;
 		Z=1;
 		pc=100;

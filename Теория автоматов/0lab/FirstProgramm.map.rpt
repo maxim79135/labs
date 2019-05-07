@@ -1,6 +1,6 @@
 Analysis & Synthesis report for FirstProgramm
-Sun Mar 17 15:03:45 2019
-Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
+Thu Apr 11 17:58:36 2019
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
  13. Source assignments for ct1:inst9|lpm_counter:lpm_counter_component
  14. Parameter Settings for User Entity Instance: ct:inst14|lpm_counter:lpm_counter_component
  15. Parameter Settings for User Entity Instance: rgsh:inst21|lpm_shiftreg:lpm_shiftreg_component
- 16. Parameter Settings for User Entity Instance: sm1:inst10|lpm_add_sub:lpm_add_sub_component
- 17. Parameter Settings for User Entity Instance: rg10:inst3|lpm_ff:lpm_ff_component
- 18. Parameter Settings for User Entity Instance: ms2:inst23|lpm_mux:lpm_mux_component
+ 16. Parameter Settings for User Entity Instance: ms2:inst23|lpm_mux:lpm_mux_component
+ 17. Parameter Settings for User Entity Instance: sm1:inst10|lpm_add_sub:lpm_add_sub_component
+ 18. Parameter Settings for User Entity Instance: rg10:inst3|lpm_ff:lpm_ff_component
  19. Parameter Settings for User Entity Instance: shifter:inst24|lpm_clshift:lpm_clshift_component
  20. Parameter Settings for User Entity Instance: rgshift:inst|lpm_shiftreg:lpm_shiftreg_component
  21. Parameter Settings for User Entity Instance: ili10:inst11|lpm_or:lpm_or_component
@@ -39,7 +39,7 @@ Quartus II Version 9.1 Build 222 10/21/2009 SJ Full Version
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -55,24 +55,24 @@ applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+------------------------------------+------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Mar 17 15:03:45 2019    ;
-; Quartus II Version                 ; 9.1 Build 222 10/21/2009 SJ Full Version ;
-; Revision Name                      ; FirstProgramm                            ;
-; Top-level Entity Name              ; firstprogramm                            ;
-; Family                             ; Cyclone III                              ;
-; Total logic elements               ; 158                                      ;
-;     Total combinational functions  ; 142                                      ;
-;     Dedicated logic registers      ; 64                                       ;
-; Total registers                    ; 64                                       ;
-; Total pins                         ; 95                                       ;
-; Total virtual pins                 ; 0                                        ;
-; Total memory bits                  ; 0                                        ;
-; Embedded Multiplier 9-bit elements ; 0                                        ;
-; Total PLLs                         ; 0                                        ;
-+------------------------------------+------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Apr 11 17:58:36 2019        ;
+; Quartus II Version                 ; 9.1 Build 350 03/24/2010 SP 2 SJ Web Edition ;
+; Revision Name                      ; FirstProgramm                                ;
+; Top-level Entity Name              ; firstprogramm                                ;
+; Family                             ; Cyclone III                                  ;
+; Total logic elements               ; 156                                          ;
+;     Total combinational functions  ; 140                                          ;
+;     Dedicated logic registers      ; 64                                           ;
+; Total registers                    ; 64                                           ;
+; Total pins                         ; 96                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -156,21 +156,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 2           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     1 processor            ; 100.0%      ;
-;     2 processors           ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -181,31 +175,31 @@ applicable agreement for further details.
 ; UA.v                             ; yes             ; User Verilog HDL File                    ; D:/Documents/1курс/2курс/Теория автоматов/0lab/UA.v                   ;
 ; firstprogramm.bdf                ; yes             ; Auto-Found Block Diagram/Schematic File  ; D:/Documents/1курс/2курс/Теория автоматов/0lab/firstprogramm.bdf      ;
 ; ct.tdf                           ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/ct.tdf                 ;
-; lpm_counter.inc                  ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.inc          ;
-; lpm_counter.tdf                  ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_counter.tdf          ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_add_sub.inc          ;
+; lpm_counter.inc                  ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_counter.inc       ;
+; lpm_counter.tdf                  ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_counter.tdf       ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.inc       ;
 ; db/cntr_6cj.tdf                  ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/cntr_6cj.tdf        ;
 ; rgsh.tdf                         ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/rgsh.tdf               ;
-; lpm_shiftreg.inc                 ; yes             ; Auto-Found AHDL File                     ; c:/altera/91/quartus/libraries/megafunctions/lpm_shiftreg.inc         ;
-; lpm_shiftreg.tdf                 ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_shiftreg.tdf         ;
+; lpm_shiftreg.inc                 ; yes             ; Auto-Found AHDL File                     ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_shiftreg.inc      ;
+; lpm_shiftreg.tdf                 ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_shiftreg.tdf      ;
+; ms2.tdf                          ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/ms2.tdf                ;
+; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File                     ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.inc           ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_mux.tdf           ;
+; db/mux_frc.tdf                   ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/mux_frc.tdf         ;
 ; sm1.tdf                          ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/sm1.tdf                ;
-; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_add_sub.tdf          ;
+; lpm_add_sub.tdf                  ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_add_sub.tdf       ;
 ; db/add_sub_p7i.tdf               ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/add_sub_p7i.tdf     ;
 ; rg10.tdf                         ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/rg10.tdf               ;
-; lpm_ff.inc                       ; yes             ; Auto-Found AHDL File                     ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.inc               ;
-; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_ff.tdf               ;
-; ms2.tdf                          ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/ms2.tdf                ;
-; lpm_mux.inc                      ; yes             ; Auto-Found AHDL File                     ; c:/altera/91/quartus/libraries/megafunctions/lpm_mux.inc              ;
-; lpm_mux.tdf                      ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_mux.tdf              ;
-; db/mux_erc.tdf                   ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/mux_erc.tdf         ;
+; lpm_ff.inc                       ; yes             ; Auto-Found AHDL File                     ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_ff.inc            ;
+; lpm_ff.tdf                       ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_ff.tdf            ;
 ; shifter.tdf                      ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/shifter.tdf            ;
-; lpm_clshift.inc                  ; yes             ; Auto-Found AHDL File                     ; c:/altera/91/quartus/libraries/megafunctions/lpm_clshift.inc          ;
-; lpm_clshift.tdf                  ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_clshift.tdf          ;
-; db/lpm_clshift_mkb.tdf           ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/lpm_clshift_mkb.tdf ;
+; lpm_clshift.inc                  ; yes             ; Auto-Found AHDL File                     ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_clshift.inc       ;
+; lpm_clshift.tdf                  ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_clshift.tdf       ;
+; db/lpm_clshift_nkb.tdf           ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/lpm_clshift_nkb.tdf ;
 ; rgshift.tdf                      ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/rgshift.tdf            ;
 ; ili10.tdf                        ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/ili10.tdf              ;
-; lpm_or.inc                       ; yes             ; Auto-Found AHDL File                     ; c:/altera/91/quartus/libraries/megafunctions/lpm_or.inc               ;
-; lpm_or.tdf                       ; yes             ; Megafunction                             ; c:/altera/91/quartus/libraries/megafunctions/lpm_or.tdf               ;
+; lpm_or.inc                       ; yes             ; Auto-Found AHDL File                     ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.inc            ;
+; lpm_or.tdf                       ; yes             ; Megafunction                             ; c:/altera/91sp2/quartus/libraries/megafunctions/lpm_or.tdf            ;
 ; ct1.tdf                          ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/ct1.tdf                ;
 ; db/cntr_e1k.tdf                  ; yes             ; Auto-Generated Megafunction              ; D:/Documents/1курс/2курс/Теория автоматов/0lab/db/cntr_e1k.tdf        ;
 ; sm2.tdf                          ; yes             ; Auto-Found Wizard-Generated File         ; D:/Documents/1курс/2курс/Теория автоматов/0lab/sm2.tdf                ;
@@ -220,26 +214,26 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 158       ;
+; Estimated Total logic elements              ; 156       ;
 ;                                             ;           ;
-; Total combinational functions               ; 142       ;
+; Total combinational functions               ; 140       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 64        ;
-;     -- 3 input functions                    ; 47        ;
-;     -- <=2 input functions                  ; 31        ;
+;     -- 4 input functions                    ; 65        ;
+;     -- 3 input functions                    ; 45        ;
+;     -- <=2 input functions                  ; 30        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 118       ;
+;     -- normal mode                          ; 116       ;
 ;     -- arithmetic mode                      ; 24        ;
 ;                                             ;           ;
 ; Total registers                             ; 64        ;
 ;     -- Dedicated logic registers            ; 64        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 95        ;
+; I/O pins                                    ; 96        ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 62        ;
-; Total fan-out                               ; 828       ;
+; Maximum fan-out                             ; 63        ;
+; Total fan-out                               ; 827       ;
 ; Average fan-out                             ; 2.09      ;
 +---------------------------------------------+-----------+
 
@@ -249,27 +243,27 @@ applicable agreement for further details.
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                  ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                            ; Library Name ;
 +---------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------+--------------+
-; |firstprogramm                              ; 142 (9)           ; 64 (3)       ; 0           ; 0            ; 0       ; 0         ; 95   ; 0            ; |firstprogramm                                                                                 ; work         ;
-;    |UA:inst29|                              ; 54 (54)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|UA:inst29                                                                       ;              ;
+; |firstprogramm                              ; 140 (8)           ; 64 (2)       ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |firstprogramm                                                                                 ; work         ;
+;    |UA:inst29|                              ; 50 (50)           ; 14 (14)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|UA:inst29                                                                       ;              ;
 ;    |ct1:inst9|                              ; 8 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct1:inst9                                                                       ; work         ;
 ;       |lpm_counter:lpm_counter_component|   ; 8 (0)             ; 6 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct1:inst9|lpm_counter:lpm_counter_component                                     ; work         ;
 ;          |cntr_e1k:auto_generated|          ; 8 (8)             ; 6 (6)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct1:inst9|lpm_counter:lpm_counter_component|cntr_e1k:auto_generated             ; work         ;
-;    |ct:inst14|                              ; 5 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct:inst14                                                                       ; work         ;
-;       |lpm_counter:lpm_counter_component|   ; 5 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct:inst14|lpm_counter:lpm_counter_component                                     ;              ;
-;          |cntr_6cj:auto_generated|          ; 5 (5)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct:inst14|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated             ; work         ;
+;    |ct:inst14|                              ; 6 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct:inst14                                                                       ; work         ;
+;       |lpm_counter:lpm_counter_component|   ; 6 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct:inst14|lpm_counter:lpm_counter_component                                     ; work         ;
+;          |cntr_6cj:auto_generated|          ; 6 (6)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ct:inst14|lpm_counter:lpm_counter_component|cntr_6cj:auto_generated             ; work         ;
 ;    |ili10:inst11|                           ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ili10:inst11                                                                    ; work         ;
 ;       |lpm_or:lpm_or_component|             ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|ili10:inst11|lpm_or:lpm_or_component                                            ; work         ;
 ;    |rg10:inst3|                             ; 0 (0)             ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rg10:inst3                                                                      ; work         ;
 ;       |lpm_ff:lpm_ff_component|             ; 0 (0)             ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rg10:inst3|lpm_ff:lpm_ff_component                                              ; work         ;
 ;    |rg5:inst4|                              ; 0 (0)             ; 5 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rg5:inst4                                                                       ; work         ;
 ;       |lpm_ff:lpm_ff_component|             ; 0 (0)             ; 5 (5)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rg5:inst4|lpm_ff:lpm_ff_component                                               ; work         ;
-;    |rgsh:inst21|                            ; 19 (0)            ; 10 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rgsh:inst21                                                                     ; work         ;
-;       |lpm_shiftreg:lpm_shiftreg_component| ; 19 (19)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rgsh:inst21|lpm_shiftreg:lpm_shiftreg_component                                 ; work         ;
+;    |rgsh:inst21|                            ; 21 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rgsh:inst21                                                                     ; work         ;
+;       |lpm_shiftreg:lpm_shiftreg_component| ; 21 (21)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rgsh:inst21|lpm_shiftreg:lpm_shiftreg_component                                 ; work         ;
 ;    |rgshift:inst|                           ; 11 (0)            ; 11 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rgshift:inst                                                                    ; work         ;
 ;       |lpm_shiftreg:lpm_shiftreg_component| ; 11 (11)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|rgshift:inst|lpm_shiftreg:lpm_shiftreg_component                                ; work         ;
 ;    |shifter:inst24|                         ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|shifter:inst24                                                                  ; work         ;
 ;       |lpm_clshift:lpm_clshift_component|   ; 10 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|shifter:inst24|lpm_clshift:lpm_clshift_component                                ; work         ;
-;          |lpm_clshift_mkb:auto_generated|   ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|shifter:inst24|lpm_clshift:lpm_clshift_component|lpm_clshift_mkb:auto_generated ; work         ;
+;          |lpm_clshift_nkb:auto_generated|   ; 10 (10)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|shifter:inst24|lpm_clshift:lpm_clshift_component|lpm_clshift_nkb:auto_generated ; work         ;
 ;    |sm1:inst10|                             ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|sm1:inst10                                                                      ; work         ;
 ;       |lpm_add_sub:lpm_add_sub_component|   ; 11 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|sm1:inst10|lpm_add_sub:lpm_add_sub_component                                    ; work         ;
 ;          |add_sub_p7i:auto_generated|       ; 11 (11)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |firstprogramm|sm1:inst10|lpm_add_sub:lpm_add_sub_component|add_sub_p7i:auto_generated         ; work         ;
@@ -304,7 +298,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Number of registers using Synchronous Load   ; 11    ;
 ; Number of registers using Asynchronous Clear ; 1     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 48    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -314,7 +308,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; UA:inst29|pc[0]                        ; 13      ;
+; UA:inst29|pc[0]                        ; 10      ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -382,7 +376,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------------------------+-------------+-------------------------------------------------------+
 ; Parameter Name         ; Value       ; Type                                                  ;
 +------------------------+-------------+-------------------------------------------------------+
-; LPM_WIDTH              ; 10          ; Untyped                                               ;
+; LPM_WIDTH              ; 11          ; Untyped                                               ;
 ; LPM_DIRECTION          ; RIGHT       ; Untyped                                               ;
 ; LPM_AVALUE             ; UNUSED      ; Untyped                                               ;
 ; LPM_SVALUE             ; UNUSED      ; Untyped                                               ;
@@ -392,6 +386,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                          ;
 ; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                        ;
 +------------------------+-------------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ms2:inst23|lpm_mux:lpm_mux_component ;
++------------------------+-------------+--------------------------------------------+
+; Parameter Name         ; Value       ; Type                                       ;
++------------------------+-------------+--------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                               ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                             ;
+; LPM_WIDTH              ; 11          ; Untyped                                    ;
+; LPM_SIZE               ; 2           ; Untyped                                    ;
+; LPM_WIDTHS             ; 1           ; Untyped                                    ;
+; LPM_PIPELINE           ; 0           ; Untyped                                    ;
+; CBXI_PARAMETER         ; mux_frc     ; Untyped                                    ;
+; DEVICE_FAMILY          ; Cyclone III ; Untyped                                    ;
++------------------------+-------------+--------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -442,25 +455,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ms2:inst23|lpm_mux:lpm_mux_component ;
-+------------------------+-------------+--------------------------------------------+
-; Parameter Name         ; Value       ; Type                                       ;
-+------------------------+-------------+--------------------------------------------+
-; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                 ;
-; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                               ;
-; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                               ;
-; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                             ;
-; LPM_WIDTH              ; 10          ; Untyped                                    ;
-; LPM_SIZE               ; 2           ; Untyped                                    ;
-; LPM_WIDTHS             ; 1           ; Untyped                                    ;
-; LPM_PIPELINE           ; 0           ; Untyped                                    ;
-; CBXI_PARAMETER         ; mux_erc     ; Untyped                                    ;
-; DEVICE_FAMILY          ; Cyclone III ; Untyped                                    ;
-+------------------------+-------------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-----------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: shifter:inst24|lpm_clshift:lpm_clshift_component ;
 +----------------+-----------------+------------------------------------------------------------+
@@ -468,9 +462,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+-----------------+------------------------------------------------------------+
 ; LPM_PIPELINE   ; 0               ; Untyped                                                    ;
 ; LPM_SHIFTTYPE  ; LOGICAL         ; Untyped                                                    ;
-; LPM_WIDTH      ; 10              ; Untyped                                                    ;
+; LPM_WIDTH      ; 11              ; Untyped                                                    ;
 ; LPM_WIDTHDIST  ; 1               ; Untyped                                                    ;
-; CBXI_PARAMETER ; lpm_clshift_mkb ; Untyped                                                    ;
+; CBXI_PARAMETER ; lpm_clshift_nkb ; Untyped                                                    ;
 +----------------+-----------------+------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -612,7 +606,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+--------------------------------------------------+
 ; Number of entity instances ; 2                                                ;
 ; Entity Instance            ; rgsh:inst21|lpm_shiftreg:lpm_shiftreg_component  ;
-;     -- LPM_WIDTH           ; 10                                               ;
+;     -- LPM_WIDTH           ; 11                                               ;
 ;     -- LPM_DIRECTION       ; RIGHT                                            ;
 ; Entity Instance            ; rgshift:inst|lpm_shiftreg:lpm_shiftreg_component ;
 ;     -- LPM_WIDTH           ; 11                                               ;
@@ -625,15 +619,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
-    Info: Version 9.1 Build 222 10/21/2009 SJ Full Version
-    Info: Processing started: Sun Mar 17 15:03:38 2019
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Thu Apr 11 17:58:29 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FirstProgramm -c FirstProgramm
-Info: Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info: Found 1 design units, including 1 entities, in source file ua.v
     Info: Found entity 1: UA
 Warning: Using design file firstprogramm.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: firstprogramm
 Info: Elaborating entity "FirstProgramm" for the top level hierarchy
+Warning: Primitive "DFF" of instance "inst13" not used
 Info: Elaborating entity "UA" for hierarchy "UA:inst29"
 Warning (10762): Verilog HDL Case Statement warning at UA.v(47): can't check case statement for completeness because the case expression has too many possible states
 Warning: Using design file ct.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
@@ -656,8 +650,21 @@ Info: Elaborating entity "lpm_shiftreg" for hierarchy "rgsh:inst21|lpm_shiftreg:
 Info: Elaborated megafunction instantiation "rgsh:inst21|lpm_shiftreg:lpm_shiftreg_component"
 Info: Instantiated megafunction "rgsh:inst21|lpm_shiftreg:lpm_shiftreg_component" with the following parameter:
     Info: Parameter "LPM_TYPE" = "LPM_SHIFTREG"
-    Info: Parameter "LPM_WIDTH" = "10"
+    Info: Parameter "LPM_WIDTH" = "11"
     Info: Parameter "LPM_DIRECTION" = "RIGHT"
+Warning: Using design file ms2.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: ms2
+Info: Elaborating entity "ms2" for hierarchy "ms2:inst23"
+Info: Elaborating entity "lpm_mux" for hierarchy "ms2:inst23|lpm_mux:lpm_mux_component"
+Info: Elaborated megafunction instantiation "ms2:inst23|lpm_mux:lpm_mux_component"
+Info: Instantiated megafunction "ms2:inst23|lpm_mux:lpm_mux_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "LPM_MUX"
+    Info: Parameter "LPM_WIDTH" = "11"
+    Info: Parameter "LPM_SIZE" = "2"
+    Info: Parameter "LPM_WIDTHS" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/mux_frc.tdf
+    Info: Found entity 1: mux_frc
+Info: Elaborating entity "mux_frc" for hierarchy "ms2:inst23|lpm_mux:lpm_mux_component|mux_frc:auto_generated"
 Warning: Using design file sm1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: sm1
 Info: Elaborating entity "sm1" for hierarchy "sm1:inst10"
@@ -681,19 +688,6 @@ Info: Instantiated megafunction "rg10:inst3|lpm_ff:lpm_ff_component" with the fo
     Info: Parameter "LPM_TYPE" = "LPM_FF"
     Info: Parameter "LPM_WIDTH" = "10"
     Info: Parameter "LPM_FFTYPE" = "DFF"
-Warning: Using design file ms2.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info: Found entity 1: ms2
-Info: Elaborating entity "ms2" for hierarchy "ms2:inst23"
-Info: Elaborating entity "lpm_mux" for hierarchy "ms2:inst23|lpm_mux:lpm_mux_component"
-Info: Elaborated megafunction instantiation "ms2:inst23|lpm_mux:lpm_mux_component"
-Info: Instantiated megafunction "ms2:inst23|lpm_mux:lpm_mux_component" with the following parameter:
-    Info: Parameter "LPM_TYPE" = "LPM_MUX"
-    Info: Parameter "LPM_WIDTH" = "10"
-    Info: Parameter "LPM_SIZE" = "2"
-    Info: Parameter "LPM_WIDTHS" = "1"
-Info: Found 1 design units, including 1 entities, in source file db/mux_erc.tdf
-    Info: Found entity 1: mux_erc
-Info: Elaborating entity "mux_erc" for hierarchy "ms2:inst23|lpm_mux:lpm_mux_component|mux_erc:auto_generated"
 Warning: Using design file shifter.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: shifter
 Info: Elaborating entity "shifter" for hierarchy "shifter:inst24"
@@ -702,20 +696,14 @@ Info: Elaborated megafunction instantiation "shifter:inst24|lpm_clshift:lpm_clsh
 Info: Instantiated megafunction "shifter:inst24|lpm_clshift:lpm_clshift_component" with the following parameter:
     Info: Parameter "LPM_TYPE" = "LPM_CLSHIFT"
     Info: Parameter "LPM_SHIFTTYPE" = "LOGICAL"
-    Info: Parameter "LPM_WIDTH" = "10"
+    Info: Parameter "LPM_WIDTH" = "11"
     Info: Parameter "LPM_WIDTHDIST" = "1"
-Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_mkb.tdf
-    Info: Found entity 1: lpm_clshift_mkb
-Info: Elaborating entity "lpm_clshift_mkb" for hierarchy "shifter:inst24|lpm_clshift:lpm_clshift_component|lpm_clshift_mkb:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_clshift_nkb.tdf
+    Info: Found entity 1: lpm_clshift_nkb
+Info: Elaborating entity "lpm_clshift_nkb" for hierarchy "shifter:inst24|lpm_clshift:lpm_clshift_component|lpm_clshift_nkb:auto_generated"
 Warning: Using design file rgshift.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: rgshift
 Info: Elaborating entity "rgshift" for hierarchy "rgshift:inst"
-Info: Elaborating entity "lpm_shiftreg" for hierarchy "rgshift:inst|lpm_shiftreg:lpm_shiftreg_component"
-Info: Elaborated megafunction instantiation "rgshift:inst|lpm_shiftreg:lpm_shiftreg_component"
-Info: Instantiated megafunction "rgshift:inst|lpm_shiftreg:lpm_shiftreg_component" with the following parameter:
-    Info: Parameter "LPM_TYPE" = "LPM_SHIFTREG"
-    Info: Parameter "LPM_WIDTH" = "11"
-    Info: Parameter "LPM_DIRECTION" = "RIGHT"
 Warning: Using design file ili10.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info: Found entity 1: ili10
 Info: Elaborating entity "ili10" for hierarchy "ili10:inst11"
@@ -773,14 +761,14 @@ Info: Instantiated megafunction "ili4:inst17|lpm_or:lpm_or_component" with the f
 Warning: Output pins are stuck at VCC or GND
     Warning (13410): Pin "y[9]" is stuck at GND
     Warning (13410): Pin "y[8]" is stuck at GND
-Info: Implemented 255 device resources after synthesis - the final resource count might be different
+Info: Implemented 253 device resources after synthesis - the final resource count might be different
     Info: Implemented 17 input pins
-    Info: Implemented 78 output pins
-    Info: Implemented 160 logic cells
-Info: Quartus II Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 254 megabytes
-    Info: Processing ended: Sun Mar 17 15:03:45 2019
+    Info: Implemented 79 output pins
+    Info: Implemented 157 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info: Peak virtual memory: 258 megabytes
+    Info: Processing ended: Thu Apr 11 17:58:36 2019
     Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
 
 

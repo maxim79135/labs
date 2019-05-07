@@ -4,7 +4,7 @@ editor if you plan to continue editing the block that represents it in
 the Block Editor! File corruption is VERY likely to occur.
 */
 /*
-Copyright (C) 1991-2009 Altera Corporation
+Copyright (C) 1991-2010 Altera Corporation
 Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
@@ -40,8 +40,8 @@ applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "data[9..0]" (rect 0 0 53 14)(font "Arial" (font_size 8)))
-		(text "data[9..0]" (rect 20 58 65 71)(font "Arial" (font_size 8)))
+		(text "data[10..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "data[10..0]" (rect 20 58 71 71)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -68,8 +68,8 @@ applicable agreement for further details.
 	(port
 		(pt 144 88)
 		(output)
-		(text "q[9..0]" (rect 0 0 35 14)(font "Arial" (font_size 8)))
-		(text "q[9..0]" (rect 95 82 125 95)(font "Arial" (font_size 8)))
+		(text "q[10..0]" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "q[10..0]" (rect 89 82 125 95)(font "Arial" (font_size 8)))
 		(line (pt 144 88)(pt 128 88)(line_width 3))
 	)
 	(drawing

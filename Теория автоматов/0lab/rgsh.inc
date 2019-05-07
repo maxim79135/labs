@@ -1,4 +1,4 @@
---Copyright (C) 1991-2009 Altera Corporation
+--Copyright (C) 1991-2010 Altera Corporation
 --Your use of Altera Corporation's design tools, logic functions 
 --and other software and tools, and its AMPP partner logic 
 --functions, and any output files from any of the foregoing 
@@ -16,7 +16,7 @@
 FUNCTION rgsh 
 (
 	clock,
-	data[9..0],
+	data[10..0],
 	enable,
 	load,
 	sclr,
@@ -24,5 +24,5 @@ FUNCTION rgsh
 )
 
 RETURNS (
-	q[9..0]
+	q[10..0]
 );

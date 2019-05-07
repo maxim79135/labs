@@ -97,6 +97,7 @@ void Tree::delete_tree(TreeNode *&leaf)
 	if (leaf != nullptr) {
 		delete_tree(leaf->left);
 		delete_tree(leaf->right);
+		delete[]leaf->array_d;
 		delete leaf;
 		leaf = nullptr;
 	}

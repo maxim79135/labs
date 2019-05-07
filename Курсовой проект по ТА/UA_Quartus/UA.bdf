@@ -2150,18 +2150,9 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 584 408)
-	(pt 712 408)
-)
-(connector
 	(text "ct[6]" (rect 600 280 622 292)(font "Arial" ))
 	(pt 632 296)
 	(pt 592 296)
-)
-(connector
-	(text "res" (rect 696 403 708 418)(font "Arial" )(vertical))
-	(pt 712 408)
-	(pt 712 376)
 )
 (connector
 	(pt 984 536)
@@ -2194,10 +2185,6 @@ applicable agreement for further details.
 	(pt 784 288)
 	(pt 776 288)
 	(bus)
-)
-(connector
-	(pt 712 376)
-	(pt 728 376)
 )
 (connector
 	(text "ct[0]" (rect 600 216 622 228)(font "Arial" ))
@@ -2694,17 +2681,22 @@ applicable agreement for further details.
 	(pt 712 808)
 )
 (connector
-	(pt 680 840)
-	(pt 680 848)
+	(pt 792 848)
+	(pt 712 848)
+)
+(connector
+	(pt 584 408)
+	(pt 728 408)
+)
+(connector
+	(text "res" (rect 712 403 724 418)(font "Arial" )(vertical))
+	(pt 728 408)
+	(pt 728 376)
 )
 (connector
 	(text "clk" (rect 616 832 630 844)(font "Arial" ))
-	(pt 680 848)
 	(pt 664 848)
-)
-(connector
-	(pt 792 848)
-	(pt 712 848)
+	(pt 640 848)
 )
 (junction (pt 104 120))
 (junction (pt 104 136))
@@ -2803,3 +2795,4 @@ applicable agreement for further details.
 (junction (pt 288 664))
 (junction (pt 448 672))
 (junction (pt 288 680))
+(text "Z" (rect 784 376 792 390)(font "Arial" (font_size 8)))

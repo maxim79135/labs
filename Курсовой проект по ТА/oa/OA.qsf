@@ -18,7 +18,7 @@
 #
 # Quartus II
 # Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
-# Date created = 08:27:43  March 09, 2018
+# Date created = 21:53:12  April 09, 2019
 #
 # -------------------------------------------------------------------------- #
 #
@@ -40,48 +40,41 @@ set_global_assignment -name FAMILY "Cyclone III"
 set_global_assignment -name DEVICE EP3C5E144C8
 set_global_assignment -name TOP_LEVEL_ENTITY OA
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.1 SP2"
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:27:43  MARCH 09, 2018"
-set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:53:12  APRIL 09, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.1 SP2"
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name SOURCE_FILE ../UACT/ct3pm.cmp
+set_global_assignment -name VHDL_FILE ../UACT/ct3pm.vhd
+set_global_assignment -name SOURCE_FILE ../UACT/dc3.cmp
+set_global_assignment -name VHDL_FILE ../UACT/dc3.vhd
+set_global_assignment -name VHDL_FILE ../UACT/reg.vhd
+set_global_assignment -name VHDL_FILE ../UACT/ua.vhd
+set_global_assignment -name BDF_FILE OA.bdf
+set_global_assignment -name QIP_FILE DC.qip
+set_global_assignment -name QIP_FILE ZERO.qip
+set_global_assignment -name QIP_FILE CT.qip
+set_global_assignment -name QIP_FILE rg16.qip
+set_global_assignment -name QIP_FILE rg16clr.qip
+set_global_assignment -name QIP_FILE rg17.qip
+set_global_assignment -name QIP_FILE rg17clr.qip
+set_global_assignment -name QIP_FILE MS16P2.qip
+set_global_assignment -name QIP_FILE shift16.qip
+set_global_assignment -name QIP_FILE MS17P2.qip
+set_global_assignment -name QIP_FILE shift17.qip
+set_global_assignment -name QIP_FILE MS17P4.qip
+set_global_assignment -name QIP_FILE DK.qip
+set_global_assignment -name QIP_FILE PLUS0.qip
+set_global_assignment -name QIP_FILE SM.qip
+set_global_assignment -name BDF_FILE UA.bdf
+set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
+set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
 set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
 set_global_assignment -name SIMULATION_MODE FUNCTIONAL
-set_global_assignment -name MISC_FILE "C:/altera/91sp2/quartus/oa/OA.dpf"
-set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
-set_global_assignment -name TIMEQUEST_MULTICORNER_ANALYSIS ON
-set_global_assignment -name TIMEQUEST_DO_CCPP_REMOVAL ON
-set_global_assignment -name SOURCE_FILE "../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/ct4pm.cmp"
-set_global_assignment -name VHDL_FILE "../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/ct4pm.vhd"
-set_global_assignment -name SOURCE_FILE "../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/dc4.cmp"
-set_global_assignment -name VHDL_FILE "../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/dc4.vhd"
-set_global_assignment -name SOURCE_FILE "../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/reg.cmp"
-set_global_assignment -name VHDL_FILE "../../../../Users/kanal/OneDrive/Рабочий стол/ТАВТ-ЛАБЫ/2 лаба/ProbeUA/reg.vhd"
-set_global_assignment -name QIP_FILE rgshift.qip
-set_global_assignment -name QIP_FILE rgshiftleft.qip
-set_global_assignment -name QIP_FILE rgshiftschp.qip
-set_global_assignment -name QIP_FILE rgharak.qip
-set_global_assignment -name QIP_FILE sm1.qip
-set_global_assignment -name QIP_FILE sm2.qip
-set_global_assignment -name QIP_FILE or5har.qip
-set_global_assignment -name QIP_FILE rgshiftright.qip
-set_global_assignment -name QIP_FILE ms1.qip
-set_global_assignment -name QIP_FILE inector11.qip
-set_global_assignment -name QIP_FILE ct1.qip
-set_global_assignment -name BDF_FILE OA.bdf
-set_global_assignment -name QIP_FILE xor21.qip
-set_global_assignment -name QIP_FILE or10rez.qip
-set_global_assignment -name QIP_FILE us.qip
-set_global_assignment -name VERILOG_FILE UA.v
 set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE OA.tbl
-set_global_assignment -name QIP_FILE shifter.qip
-set_global_assignment -name QIP_FILE schp.qip
-set_global_assignment -name ZIP_VECTOR_WAVEFORM_FILE OA.sim.cvwf
-set_global_assignment -name VECTOR_TABLE_OUTPUT_FILE PRS.tbl
-set_global_assignment -name BDF_FILE UpAvt.bdf
-set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE OA.tbl
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

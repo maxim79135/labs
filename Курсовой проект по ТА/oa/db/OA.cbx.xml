@@ -1,12 +1,15 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="OA">
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|CT2:inst36|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_d1k.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|ct1:inst|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_6cj.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|ms1:inst18|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_s7e.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|ms1:inst41|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_s7e.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|shifter:inst9|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_pkb.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|sm1:inst27|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_r3i.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|OA|sm2:inst1|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_d6i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|DC:inst1|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_lbf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|MS17P2:inst24|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_08e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|UA:inst35|dc3:UAinst20|lpm_decode:lpm_decode_component" CBX_FILE_NAME="decode_5af.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|shift17:inst26|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_duc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|CT:inst4|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_5cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|MS17P4:inst27|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_38e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|SM:inst30|lpm_add_sub:lpm_add_sub_component" CBX_FILE_NAME="add_sub_v3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|shift16:inst11|lpm_clshift:lpm_clshift_component" CBX_FILE_NAME="lpm_clshift_tjc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|MS16P2:inst9|LPM_MUX:lpm_mux_component" CBX_FILE_NAME="mux_v7e.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|OA|UA:inst35|ct3pm:UAinst21|lpm_counter:lpm_counter_component" CBX_FILE_NAME="cntr_50j.tdf"/>
 	</PROJECT>
 </LOG_ROOT>
