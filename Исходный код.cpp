@@ -53,3 +53,8 @@ void Pop(struct Node* curr) {
 	cout << "Current node is " << (*curr).value << endl;
 	delete curr;
 }
+
+
+bool test() {
+    return true;
+}
