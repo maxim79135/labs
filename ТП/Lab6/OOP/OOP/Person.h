@@ -13,6 +13,7 @@ public:
 	virtual bool isOutStanding();
 	string getName() { return name;  }
 	string getSurName() { return surname; }
+    void setName();
 	int getAge() { return age; }
 	void setData(string _name, string _surname, int _age) { name = _name; surname = _surname; age = _age; }
 
@@ -25,7 +26,9 @@ protected:
 class Student : public Person {
 public:
 	Student();
+    void getData();
+    bool isOutStanding();
 
 private:
-
+    double gpa;
 };

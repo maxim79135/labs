@@ -10,7 +10,30 @@ Person::~Person()
 {
 }
 
+bool Person::isOutStanding() { 
+    return true;
+}
+
+
+void Person::getData() {
+    
+}
+
+void Person::setName() {
+    cout << "Enter name: ";
+    cin >> name;
+}
+
 Student::Student()
 {
-	Person::Person();
+    Person();
 }
+
+void Student::getData() { 
+    Person::setName();
+}
+
+bool Student::isOutStanding() {
+    return true;
+}
+
