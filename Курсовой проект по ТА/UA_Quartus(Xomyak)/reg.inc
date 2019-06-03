@@ -1,4 +1,4 @@
---Copyright (C) 1991-2009 Altera Corporation
+--Copyright (C) 1991-2010 Altera Corporation
 --Your use of Altera Corporation's design tools, logic functions 
 --and other software and tools, and its AMPP partner logic 
 --functions, and any output files from any of the foregoing 
@@ -16,9 +16,9 @@
 FUNCTION reg 
 (
 	clock,
-	data[7..0]
+	data[8..0]
 )
 
 RETURNS (
-	q[7..0]
+	q[8..0]
 );

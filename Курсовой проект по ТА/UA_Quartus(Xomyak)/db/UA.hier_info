@@ -1,13 +1,15 @@
 |UA
-Z <= yy[7].DB_MAX_OUTPUT_PORT_TYPE
+Z <= yy[8].DB_MAX_OUTPUT_PORT_TYPE
 clk => reg:inst7.clock
 clk => ct4pm:UAinst24.clock
 clk => inst5.IN0
 xpin[0] => inst1[0].IN0
 xpin[0] => inst.IN1
 xpin[0] => inst2.IN1
+xpin[1] => inst10.IN1
 xpin[1] => inst1[1].IN0
 xpin[1] => inst6.IN1
+xpin[1] => inst16.IN1
 xpin[2] => inst1[2].IN0
 xpin[2] => inst14.IN1
 xpin[3] => inst13.IN1
@@ -18,10 +20,13 @@ xpin[4] => inst22.IN2
 xpin[4] => inst39.IN3
 xpin[5] => inst1[5].IN0
 xpin[5] => inst24.IN1
+xpin[5] => inst25.IN1
 xpin[6] => inst1[6].IN0
 xpin[6] => inst24.IN2
 xpin[7] => inst1[7].IN0
 xpin[7] => inst24.IN3
+xpin[8] => inst1[8].IN0
+xpin[8] => inst15.IN1
 res => ct4pm:UAinst24.aload
 clkout <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 apin[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
@@ -33,7 +38,7 @@ apin[5] <= a[5].DB_MAX_OUTPUT_PORT_TYPE
 apin[6] <= a[6].DB_MAX_OUTPUT_PORT_TYPE
 apin[7] <= a[7].DB_MAX_OUTPUT_PORT_TYPE
 apin[8] <= a[8].DB_MAX_OUTPUT_PORT_TYPE
-ctpin[0] <= inst50.DB_MAX_OUTPUT_PORT_TYPE
+ctpin[0] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
 ctpin[1] <= inst28[0].DB_MAX_OUTPUT_PORT_TYPE
 ctpin[2] <= inst28[1].DB_MAX_OUTPUT_PORT_TYPE
 ctpin[3] <= inst28[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -52,6 +57,7 @@ ypin[4] <= yy[4].DB_MAX_OUTPUT_PORT_TYPE
 ypin[5] <= yy[5].DB_MAX_OUTPUT_PORT_TYPE
 ypin[6] <= yy[6].DB_MAX_OUTPUT_PORT_TYPE
 ypin[7] <= yy[7].DB_MAX_OUTPUT_PORT_TYPE
+ypin[8] <= yy[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |UA|reg:inst7
@@ -64,6 +70,7 @@ data[4] => lpm_ff:lpm_ff_component.data[4]
 data[5] => lpm_ff:lpm_ff_component.data[5]
 data[6] => lpm_ff:lpm_ff_component.data[6]
 data[7] => lpm_ff:lpm_ff_component.data[7]
+data[8] => lpm_ff:lpm_ff_component.data[8]
 q[0] <= lpm_ff:lpm_ff_component.q[0]
 q[1] <= lpm_ff:lpm_ff_component.q[1]
 q[2] <= lpm_ff:lpm_ff_component.q[2]
@@ -72,6 +79,7 @@ q[4] <= lpm_ff:lpm_ff_component.q[4]
 q[5] <= lpm_ff:lpm_ff_component.q[5]
 q[6] <= lpm_ff:lpm_ff_component.q[6]
 q[7] <= lpm_ff:lpm_ff_component.q[7]
+q[8] <= lpm_ff:lpm_ff_component.q[8]
 
 
 |UA|reg:inst7|lpm_ff:lpm_ff_component
@@ -83,6 +91,8 @@ data[4] => dffs[4].DATAIN
 data[5] => dffs[5].DATAIN
 data[6] => dffs[6].DATAIN
 data[7] => dffs[7].DATAIN
+data[8] => dffs[8].DATAIN
+clock => dffs[8].CLK
 clock => dffs[7].CLK
 clock => dffs[6].CLK
 clock => dffs[5].CLK
@@ -91,6 +101,7 @@ clock => dffs[3].CLK
 clock => dffs[2].CLK
 clock => dffs[1].CLK
 clock => dffs[0].CLK
+enable => dffs[8].ENA
 enable => dffs[7].ENA
 enable => dffs[6].ENA
 enable => dffs[5].ENA
@@ -113,6 +124,7 @@ q[4] <= dffs[4].DB_MAX_OUTPUT_PORT_TYPE
 q[5] <= dffs[5].DB_MAX_OUTPUT_PORT_TYPE
 q[6] <= dffs[6].DB_MAX_OUTPUT_PORT_TYPE
 q[7] <= dffs[7].DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= dffs[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |UA|dc4:UAinst28

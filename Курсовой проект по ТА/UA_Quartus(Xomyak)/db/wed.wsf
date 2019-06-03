@@ -1655,7 +1655,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[7]";
+		SIGNAL = "xpin[8]";
 		INDEX = 27;
 		FORMAT = E;
 		SCALE = 1;
@@ -1663,7 +1663,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[6]";
+		SIGNAL = "xpin[7]";
 		INDEX = 28;
 		FORMAT = E;
 		SCALE = 1;
@@ -1671,7 +1671,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[5]";
+		SIGNAL = "xpin[6]";
 		INDEX = 29;
 		FORMAT = E;
 		SCALE = 1;
@@ -1679,7 +1679,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[4]";
+		SIGNAL = "xpin[5]";
 		INDEX = 30;
 		FORMAT = E;
 		SCALE = 1;
@@ -1687,7 +1687,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[3]";
+		SIGNAL = "xpin[4]";
 		INDEX = 31;
 		FORMAT = E;
 		SCALE = 1;
@@ -1695,7 +1695,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[2]";
+		SIGNAL = "xpin[3]";
 		INDEX = 32;
 		FORMAT = E;
 		SCALE = 1;
@@ -1703,7 +1703,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[1]";
+		SIGNAL = "xpin[2]";
 		INDEX = 33;
 		FORMAT = E;
 		SCALE = 1;
@@ -1711,7 +1711,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "xpin[0]";
+		SIGNAL = "xpin[1]";
 		INDEX = 34;
 		FORMAT = E;
 		SCALE = 1;
@@ -1719,23 +1719,23 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin";
+		SIGNAL = "xpin[0]";
 		INDEX = 35;
-		FORMAT = T;
-		SCALE = 1;
-		VISIBLE = Y;
-		FLAG = N;
-	}
-	LINE{
-		SIGNAL = "ypin[7]";
-		INDEX = 36;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[6]";
+		SIGNAL = "ypin";
+		INDEX = 36;
+		FORMAT = T;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ypin[8]";
 		INDEX = 37;
 		FORMAT = E;
 		SCALE = 1;
@@ -1743,7 +1743,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[5]";
+		SIGNAL = "ypin[7]";
 		INDEX = 38;
 		FORMAT = E;
 		SCALE = 1;
@@ -1751,7 +1751,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[4]";
+		SIGNAL = "ypin[6]";
 		INDEX = 39;
 		FORMAT = E;
 		SCALE = 1;
@@ -1759,7 +1759,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[3]";
+		SIGNAL = "ypin[5]";
 		INDEX = 40;
 		FORMAT = E;
 		SCALE = 1;
@@ -1767,7 +1767,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[2]";
+		SIGNAL = "ypin[4]";
 		INDEX = 41;
 		FORMAT = E;
 		SCALE = 1;
@@ -1775,7 +1775,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[1]";
+		SIGNAL = "ypin[3]";
 		INDEX = 42;
 		FORMAT = E;
 		SCALE = 1;
@@ -1783,7 +1783,7 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "ypin[0]";
+		SIGNAL = "ypin[2]";
 		INDEX = 43;
 		FORMAT = E;
 		SCALE = 1;
@@ -1791,8 +1791,24 @@ VECTOR("D:/Documents/1курс/2курс/Курсовой проект по ТА/UA_Quartus(Xomyak)/UA.vwf
 		FLAG = N;
 	}
 	LINE{
-		SIGNAL = "Z";
+		SIGNAL = "ypin[1]";
 		INDEX = 44;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "ypin[0]";
+		INDEX = 45;
+		FORMAT = E;
+		SCALE = 1;
+		VISIBLE = Y;
+		FLAG = N;
+	}
+	LINE{
+		SIGNAL = "Z";
+		INDEX = 46;
 		FORMAT = E;
 		SCALE = 1;
 		VISIBLE = Y;
