@@ -10,15 +10,18 @@ bool onRead = false, onSolve = false;
 char *Buffer;
 HWND hwnd2;
 HWND *hEdit;
+HWND hverA, hverB;
 HWND hwndComboBox;
 HWND hwndButton3, hwndButton4;
 WNDPROC DefEditProc;
 HWND CreateEdit(int i, LPWSTR text, int x, int y, HWND hwnd, int hmenu);
 
 bool read_graph();
+char minDistance(char* Buffer, int count, int verA, int verB);
 void CreateEdits(int);
 
 int count, curEdit = 0;
+char verA, verB;
 
 LRESULT CALLBACK Wnd2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam) {
 	switch (message)
@@ -36,9 +39,12 @@ LRESULT CALLBACK Wnd2Proc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			GetDlgItemText(hwnd, 4, LPWSTR(option), 20);
 			count = char(option[0]) - 48;
 			CreateEdits(count);
+			hverA = CreateEdit(90, L"", 200, 50, hwnd2, 90);
+			hverB = CreateEdit(91, L"", 200, 75, hwnd2, 91);
 			break;
 
 		case 9:
+			read_graph();
 			onRead = true;
 			break;
 		}
@@ -53,11 +59,19 @@ LRESULT CALLBACK NewEditProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 	{
 		switch (wparam) {
 		case VK_TAB:
-			if (curEdit < count * count - 1)
-				curEdit = curEdit + 1;
-			else
-				curEdit = 0;
-			SetFocus(hEdit[curEdit]);
+			if (curEdit < count * count - 1) {
+				curEdit++;
+				SetFocus(hEdit[curEdit]);
+			} else {
+				if (curEdit == count * count - 1) {
+					curEdit++;
+					SetFocus(hverA);
+				}
+				else {
+					SetFocus(hverB);
+					curEdit = -1;
+				}
+			}
 			break;
 		default:
 			break;
@@ -73,6 +87,8 @@ LRESULT CALLBACK NewEditProc(HWND hwnd, UINT msg, WPARAM wparam, LPARAM lparam)
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
+	char res;
+	HWND result;
 	switch (message) {
 	case WM_COMMAND:
 		switch (LOWORD(wParam))
@@ -88,14 +104,11 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT message, WPARAM wParam, LPARAM lParam)
 			break;
 
 		case ButtonTo:
-			for (int i = 0; i < count * count; i++)
-				SendMessage(hEdit[i], WM_CLOSE, 0, 0);
-			SendMessage(hwndComboBox, WM_CLOSE, 0, 0);
-			SendMessage(hwndButton3, WM_CLOSE, 0, 0);
-			SendMessage(hwndButton4, WM_CLOSE, 0, 0);
-			break;
-
-		default:
+			res = minDistance(Buffer, count, verA, verB);
+			result = CreateEdit(92, L"", 200, 100, hwnd2, 92);
+			char temp[10] = {};
+			temp[0] = res;
+			SetWindowTextW(result, LPWSTR(temp));
 			break;
 		}
 		break;
@@ -219,11 +232,11 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInstant, PWSTR pCmdLine,
 	if (hwnd == INVALID_HANDLE_VALUE)
 		return EXIT_FAILURE;
 
-	HWND hwndButton1 = CreateButton(L"Data", 50, 50, 75, 50, hwnd, ButtonFirst);
-	HWND hwndButton2 = CreateButton(L"Solve", 150, 50, 75, 50, hwnd, ButtonTo);
+	HWND hwndButton1 = CreateButton(L"Данные", 50, 50, 75, 50, hwnd, ButtonFirst);
+	HWND hwndButton2 = CreateButton(L"Решение", 150, 50, 75, 50, hwnd, ButtonTo);
 
-	hwndButton3 = CreateButton(L"Select", 100, 200, 50, 30, hwnd2, 8);
-	hwndButton4 = CreateButton(L"Enter", 200, 200, 50, 30, hwnd2, 9);
+	hwndButton3 = CreateButton(L"Выбрать", 100, 200, 60, 30, hwnd2, 8);
+	hwndButton4 = CreateButton(L"Ввести", 200, 200, 60, 30, hwnd2, 9);
 
 	hwndComboBox = CreateComboBox(L"", 20, 200, 50, 100, hwnd2, CmbBox);
 	SendMessage(hwndComboBox, CB_ADDSTRING, 0, (LPARAM)"1");
@@ -258,5 +271,47 @@ bool read_graph() {
 		GetWindowText(hEdit[i], LPWSTR(buff), 10);
 		Buffer[i] = buff[0];
 	}
+	GetWindowText(hverA, LPWSTR(buff), 10);
+	verA = buff[0] - 48;
+	GetWindowText(hverB, LPWSTR(buff), 10);
+	verB = buff[0] - 48;
 	return true;
+}
+
+char minDistance(char* Buffer, int count, int verA, int verB) {
+	int *graph = (int *)malloc(count * count * sizeof(int));
+	int *W = (int *)malloc(count * count * sizeof(int));
+	for (int i = 0; i < strlen(Buffer); i++) {
+		if (Buffer[i] >= 48 && Buffer[i] <= 57) {
+			graph[i] = Buffer[i] - 48;
+		}
+	}
+
+	for (int i = 0; i < count * count; i++)
+		if (graph[i] != 0)
+			W[i] = graph[i];
+		else
+			W[i] = 100;
+
+	for (int k = 0; k < count; k++)
+		for (int i = 0; i < count; i++)
+			for (int j = 0; j < count; j++)
+				if (W[i * count + j] != 100)
+					W[i * count + j] = min(W[i * count + j], W[i * count + k] + W[k * count + j]);
+				else
+					W[i * count + j] = W[i * count + k] + W[k * count + j];
+	//////////////////////////////
+
+	////////////////////////////// create buffer for write
+	for (int i = 0; i < count * count; i++) {
+		if (Buffer[i] >= 48 && Buffer[i] <= 57) {
+			if (W[i] == 100)
+				Buffer[i] = char(48);
+			else
+				Buffer[i] = char(W[i] + 48);
+		}
+	}
+	free(graph);
+	free(W);
+	return Buffer[(verA - 1) * count + (verB - 1)];
 }
